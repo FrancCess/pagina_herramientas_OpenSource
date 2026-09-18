@@ -1,0 +1,113 @@
+IMÁGENES DEL CARRUSEL SUPERIOR — GUÍA RÁPIDA
+==============================================
+
+Cada página de categoría tiene, arriba de todo, un carrusel ancho que
+va rotando 2 a 5 elementos destacados con una imagen de fondo grande.
+Ya está armado el ícono, el nombre, la descripción y el botón de cada
+slide -- solo falta la imagen de fondo.
+
+CÓMO AGREGAR UNA IMAGEN
+----------------------------------------------
+1. Guardá la imagen en esta misma carpeta (img/carousel/) con el
+   nombre exacto de la lista de abajo (ej: fedora.jpg).
+2. Listo -- no hace falta tocar el HTML ni el CSS. El carrusel ya
+   está programado para buscar la imagen ahí; en cuanto el archivo
+   exista, aparece sola (si ves el fondo oscuro con la cuadrícula,
+   es porque todavía no guardaste esa imagen).
+
+QUÉ TIPO DE IMAGEN CONVIENE
+----------------------------------------------
+Estas SÍ pueden ser imágenes promocionales/artísticas (wallpapers,
+logos grandes, arte oficial del proyecto) -- no tienen que ser capturas
+reales de la interfaz, a diferencia de la sección 'Capturas' de cada
+ficha. El recuadro es ancho y bajo (ocupa todo el ancho de la página,
+320px de alto), se oscurece automáticamente con un degradado para que
+el texto se lea bien encima, y la imagen se recorta sola para llenar
+el espacio -- por eso conviene una imagen apaisada (más ancha que alta,
+ideal 1400-1600px de ancho) con el elemento principal centrado, para
+que no se corte al recortarse en pantallas angostas.
+
+Ya cargué ubuntu.jpg (la misma imagen que guardaste). El resto queda
+pendiente -- guardá las que tengas, no hace falta completarlas todas.
+
+----------------------------------------------
+LISTA DE ARCHIVOS NECESARIOS
+----------------------------------------------
+
+  0ad.jpg
+      0 A.D.  ->  aparece en: Juegos
+
+  apache.jpg
+      Apache Foundation  ->  aparece en: Ecosistema
+
+  blender.jpg
+      Blender  ->  aparece en: Edición: Imagen, Video y Audio, Herramientas (portada de categorías)
+
+  django.jpg
+      Django  ->  aparece en: Desarrollo
+
+  fedora.jpg
+      Fedora  ->  aparece en: Distribuciones Linux
+
+  firefox.jpg
+      Firefox  ->  aparece en: Otras Utilidades
+
+  gimp.jpg
+      GIMP  ->  aparece en: Edición: Imagen, Video y Audio, Herramientas (portada de categorías)
+
+  git.jpg
+      Git  ->  aparece en: Comunidad, Otras Utilidades
+
+  github.jpg
+      GitHub  ->  aparece en: Ecosistema
+
+  github-contrib.jpg
+      GitHub  ->  aparece en: Comunidad
+
+  gnu.jpg
+      Proyecto GNU  ->  aparece en: Ecosistema
+
+  gsoc.jpg
+      Google Summer of Code  ->  aparece en: Comunidad
+
+  hacktoberfest.jpg
+      Hacktoberfest  ->  aparece en: Comunidad
+
+  kali.jpg
+      Kali Linux  ->  aparece en: Distribuciones Linux
+
+  kubernetes.jpg
+      Kubernetes  ->  aparece en: Desarrollo
+
+  libreoffice.jpg
+      LibreOffice  ->  aparece en: Herramientas (portada de categorías), Ofimática
+
+  linux.jpg
+      Linux Kernel  ->  aparece en: Ecosistema
+
+  nextcloud.jpg
+      Nextcloud + Collabora  ->  aparece en: Ofimática
+
+  obs.jpg
+      OBS Studio  ->  aparece en: Edición: Imagen, Video y Audio, Herramientas (portada de categorías)
+
+  osi.jpg
+      Open Source Initiative  ->  aparece en: Ecosistema
+
+  pr.jpg
+      Tu primera contribución  ->  aparece en: Comunidad
+
+  python.jpg
+      Python  ->  aparece en: Desarrollo
+
+  react.jpg
+      React  ->  aparece en: Desarrollo
+
+  rust.jpg
+      Rust  ->  aparece en: Desarrollo
+
+  steam.jpg
+      Steam + Proton  ->  aparece en: Juegos
+
+  ubuntu.jpg [YA CARGADA]
+      Ubuntu  ->  aparece en: Distribuciones Linux, Herramientas (portada de categorías)

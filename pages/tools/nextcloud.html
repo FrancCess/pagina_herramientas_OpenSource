@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nextcloud + Collabora · Open Source</title>
+<meta name="description" content="Tu propio Google Workspace auto-alojado. Documentos, calendarios y almacenamiento — bajo tu control.">
+<link rel="icon" type="image/svg+xml" href="../../img/favicon.svg">
+<link rel="alternate icon" href="../../img/favicon.ico">
+<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="../../index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../ecosistema.html#que-es">¿Qué es?</a></li>
+              <li><a class="dropdown-item" href="../ecosistema.html#historia">Historia</a></li>
+              <li><a class="dropdown-item" href="../ecosistema.html#organizaciones">Organizaciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="../herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item active" href="../ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item" href="../edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="../juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="../utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="../desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../comunidad.html#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="../comunidad.html#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../comunidad.html#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ FICHA: Nextcloud + Collabora ============ -->
+  <main>
+    <div class="container">
+
+      <p class="tool-breadcrumb reveal">
+        <a href="../../index.html">Inicio</a><span class="sep">/</span><a href="../ofimatica.html">Ofimática</a><span class="sep">/</span>Nextcloud + Collabora
+      </p>
+
+      <section class="tool-hero reveal">
+        <div class="tool-hero-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#0082C9"><path d="M12.018 6.537c-2.5 0-4.6 1.712-5.241 4.015-.56-1.232-1.793-2.105-3.225-2.105A3.569 3.569 0 0 0 0 12a3.569 3.569 0 0 0 3.552 3.553c1.432 0 2.664-.874 3.224-2.106.641 2.304 2.742 4.016 5.242 4.016 2.487 0 4.576-1.693 5.231-3.977.569 1.21 1.783 2.067 3.198 2.067A3.568 3.568 0 0 0 24 12a3.569 3.569 0 0 0-3.553-3.553c-1.416 0-2.63.858-3.199 2.067-.654-2.284-2.743-3.978-5.23-3.977zm0 2.085c1.878 0 3.378 1.5 3.378 3.378 0 1.878-1.5 3.378-3.378 3.378A3.362 3.362 0 0 1 8.641 12c0-1.878 1.5-3.378 3.377-3.378zm-8.466 1.91c.822 0 1.467.645 1.467 1.468s-.644 1.467-1.467 1.468A1.452 1.452 0 0 1 2.085 12c0-.823.644-1.467 1.467-1.467zm16.895 0c.823 0 1.468.645 1.468 1.468s-.645 1.468-1.468 1.468A1.452 1.452 0 0 1 18.98 12c0-.823.644-1.467 1.467-1.467z"/></svg></div>
+        <div class="tool-hero-body">
+          <span class="tool-hero-tag">Alternativa a Google Workspace</span>
+          <h1>Nextcloud + Collabora</h1>
+          <p class="tool-hero-desc">Tu propio Google Workspace auto-alojado. Documentos, calendarios y almacenamiento — bajo tu control.</p>
+          <div class="tool-hero-actions">
+            <a href="https://nextcloud.com" class="btn-primary-os" target="_blank" rel="noopener">Sitio oficial ↗</a>
+            <a href="../ofimatica.html" class="btn-ghost-os">← Volver a Ofimática</a>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="tool-section reveal">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.6 10.8c.4.3.6.8.6 1.3V16h6v-.9c0-.5.2-1 .6-1.3A6 6 0 0012 3z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>¿Para qué sirve?</h2>
+        </div>
+        <p class="section-intro reveal">Nextcloud es tu propia nube privada auto-alojada (archivos, calendario, contactos) y, combinada con Collabora Online, permite editar documentos ofimáticos colaborativamente desde el navegador.</p>
+      </section>
+
+      <section class="tool-section reveal">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="white" stroke-width="1.8"/><path d="M3 14.5l5-4.5 4 3.5 3-2.5 6 5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7.5" r="1.4" fill="currentColor"/></svg></div>
+          <h2>Capturas</h2>
+        </div>
+        <p class="section-intro reveal">Espacio reservado para tus propias capturas de Nextcloud + Collabora — reemplazá estos recuadros por imágenes reales cuando las tengas.</p>
+        <div class="shot-grid reveal">
+          <!-- CAPTURA 1 de Nextcloud + Collabora: guardá la imagen como img/capturas/nextcloud-1.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/nextcloud-1.jpg" alt="Captura de Nextcloud + Collabora" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><div class="shot-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 14.5l5-4.5 4 3.5 3-2.5 6 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7.5" r="1.4" fill="currentColor"/></svg><span>Captura 1</span></div></div>
+          <!-- CAPTURA 2 de Nextcloud + Collabora: guardá la imagen como img/capturas/nextcloud-2.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/nextcloud-2.jpg" alt="Captura de Nextcloud + Collabora" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><div class="shot-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 14.5l5-4.5 4 3.5 3-2.5 6 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7.5" r="1.4" fill="currentColor"/></svg><span>Captura 2</span></div></div>
+          <!-- CAPTURA 3 de Nextcloud + Collabora: guardá la imagen como img/capturas/nextcloud-3.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/nextcloud-3.jpg" alt="Captura de Nextcloud + Collabora" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><div class="shot-placeholder"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 14.5l5-4.5 4 3.5 3-2.5 6 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7.5" r="1.4" fill="currentColor"/></svg><span>Captura 3</span></div></div>
+        </div>
+      </section>
+
+      <section class="tool-section reveal" style="margin-bottom: 60px;">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10 14L21 3M21 3h-6M21 3v6M19 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>También te puede interesar</h2>
+        </div>
+        <a href="cryptpad.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#0087FF"><path d="m2.355 0 .008.717.153 12.23c.045 3.668 1.528 6.09 3.425 7.692 1.897 1.602 4.168 2.444 5.844 3.215l.317.146.308-.164c1.492-.788 3.779-1.625 5.72-3.209 1.943-1.584 3.515-3.997 3.515-7.69V5.97L15.22 0Zm9.729 1.416h1.604v6.016h6.542v3.879H15.4c-.055 1.091-.59 1.926-1.256 2.484l.938 4.97h-2.994v3.655l-.018.008c-1.691-.764-3.651-1.55-5.215-2.87-1.653-1.396-2.884-3.32-2.925-6.628l-.02-1.62h4.674c-.003-.054-.006-.108-.006-.164a3.424 3.424 0 0 1 3.41-3.41l.096.002zm3.02.408 4.513 4.194h-4.513zm-3.112 6.91a2.412 2.412 0 0 0-1.043 4.586l-.844 4.448h3.772l-.842-4.448a2.412 2.412 0 0 0-1.043-4.586z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>CryptPad</h4>
+              <p>Documentos colaborativos con cifrado E2E. Ni siquiera el servidor puede leer tu contenido. Privacidad total.</p>
+              <span class="tc-badge tc-yellow">Alternativa a Google Docs</span>
+            </div>
+          </div>
+        </a>
+        <a href="apache-openoffice.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#0E85CD"><path d="M12 0C5.372 0 0 5.371 0 12c0 .843.088 1.667.254 2.462a12.594 12.594 0 013.309-.44c1.836 0 3.579.392 5.152 1.099a12.536 12.536 0 017.303-2.332c1.704 0 3.33.339 4.811.953l.023.01a.186.186 0 01-.083.353l-.267-.02a12.525 12.525 0 00-.895-.032c-4.208 0-7.988 1.546-10.281 4.681l-.11.151a.183.183 0 01-.28.008C6.76 16.847 3.894 16.037.677 15.981 2.32 20.65 6.768 24 11.998 24 18.628 24 24 18.627 24 12c0-6.628-5.373-12-12.001-12zm9.395 7.181c-.042-.004-.114-.016-.16-.022a6.703 6.703 0 00-.405-.051c-2.447-.23-4.725.449-6.21 2.171-.063.064-.118.067-.179.003-1.181-1.34-2.864-1.935-4.795-2.118a7.24 7.24 0 00-2.01.09l-.01.001-.02.002a.125.125 0 01-.075-.223l.035-.02a7.23 7.23 0 014.05-.795c1.054.1 2.035.42 2.9.91a7.279 7.279 0 016.797-.255c.045.025.093.047.14.073a.116.116 0 01.067.11c0 .069-.044.134-.125.124z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>Apache OpenOffice</h4>
+              <p>El clásico histórico de la ofimática libre. Sólido, ligero y con décadas de refinamiento.</p>
+              <span class="tc-badge tc-green">Alternativa a MS Office</span>
+            </div>
+          </div>
+        </a>
+        <a href="libreoffice.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#18A303"><path d="M16.365 0a.597.597 0 00-.555.352.582.582 0 00.128.635l4.985 4.996a.605.605 0 00.635.133.59.59 0 00.363-.53V.577A.605.605 0 0021.335 0zM2.661 0a.59.59 0 00-.582.59v22.82a.59.59 0 00.582.59h18.67a.59.59 0 00.59-.59V8.716a.59.59 0 00-.17-.42L13.674.182a.59.59 0 00-.42-.181zm.59 1.184h9.754l7.733 7.77v13.863H3.251z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>LibreOffice</h4>
+              <p>Suite completa: Writer, Calc, Impress, Draw, Base. Compatible con .docx, .xlsx, .pptx. Disponible en Windows, Linux y macOS.</p>
+              <span class="tc-badge tc-green">Alternativa a MS Office</span>
+            </div>
+          </div>
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="../../index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>
