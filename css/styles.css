@@ -4093,3 +4093,7 @@ body.has-tl footer { padding-bottom: 90px; }
 
 /* Nota de ilustraciones generadas con IA */
 .ai-note { max-width: 1140px; margin: 40px auto 0; padding: 0 16px; font-size: .78rem; color: rgba(11, 30, 61, .55); text-align: center; }
+
+/* Antes/Después: cada escena en su propia capa para que el recorte funcione */
+.ba-before { z-index: 1; }
+.ba-after { z-index: 2; }

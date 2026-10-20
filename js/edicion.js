@@ -78,11 +78,11 @@
     var meters = Array.prototype.slice.call(mx.querySelectorAll('[data-mx-meter]'));
     var scope = mx.querySelector('[data-mx-scope]'), sctx = scope.getContext('2d');
     var ctx = null, chans = [], master = null, analysers = [], timer = null, nextT = 0, stepN = 0, startT = 0, raf = 0;
-    var BPM = 100, S16 = 60 / BPM / 4;
-    /* La menor: Am – F – C – G */
-    var CH = [[57, 60, 64], [53, 57, 60], [48, 52, 55], [55, 59, 62]];
-    var BASS = [45, 41, 36, 43];
-    var MEL = [76, 72, 69, 72, 77, 72, 69, 72, 76, 72, 67, 72, 74, 71, 67, 71];
+    var BPM = 124, S16 = 60 / BPM / 4;
+    /* Do mayor, electrónica animada: C – G – Am – F */
+    var CH = [[60, 64, 67], [59, 62, 67], [57, 60, 64], [57, 60, 65]];
+    var BASS = [36, 43, 33, 41];
+    var MEL = [79, 76, 72, 76, 79, 76, 84, 79, 79, 74, 79, 83, 79, 74, 83, 79, 81, 76, 72, 76, 81, 76, 72, 69, 77, 72, 77, 81, 77, 72, 81, 77];
     var hz = function (m) { return 440 * Math.pow(2, (m - 69) / 12); };
     var gainOf = function (i) { return (+faders[i].value / 100) * (mutes[i] && mutes[i].getAttribute('aria-pressed') === 'true' ? 0 : 1); };
     var applyGains = function () {
@@ -125,9 +125,9 @@
         if (b % 4 === 0) kick(nextT);
         if (b === 4 || b === 12) snare(nextT);
         if (b % 2 === 1) hat(nextT, .12);
-        if (b % 4 === 0 || b === 6 || b === 14) tone(1, 'sawtooth', BASS[bar], nextT, S16 * 1.6, .32, 500);
-        if (b === 0 || b === 8) CH[bar].forEach(function (m) { tone(2, 'triangle', m, nextT, S16 * 7, .1, 1800); });
-        if (b % 2 === 0 && MEL[(s / 2 | 0) % 16] && (b % 4 === 0 || Math.random() > .35)) tone(3, 'square', MEL[(s / 2 | 0) % 16], nextT, S16 * 1.3, .07, 2600);
+        if (b % 4 === 2) tone(1, 'sawtooth', BASS[bar], nextT, S16 * 1.8, .34, 700);
+        if (b === 0 || b === 6 || b === 10 || b === 14) CH[bar].forEach(function (m) { tone(2, 'sawtooth', m, nextT, S16 * 2.2, .05, 2200); });
+        if (b % 2 === 0 && MEL[(s / 2 | 0) % 32] && (b % 4 === 0 || Math.random() > .35)) tone(3, 'square', MEL[(s / 2 | 0) % 32], nextT, S16 * 1.3, .07, 2600);
         nextT += S16; stepN++;
       }
     };
