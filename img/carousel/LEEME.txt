@@ -1,34 +1,57 @@
-IMÁGENES DEL CARRUSEL SUPERIOR — GUÍA RÁPIDA
-==============================================
+IMÁGENES DEL CARRUSEL SUPERIOR Y DE LAS TARJETAS DE DISTROS — GUÍA RÁPIDA
+==========================================================================
+
+*** ACTUALIZACIÓN (octubre 2026) ***
+Las páginas Herramientas, Distros, Ofimática, Edición, Juegos, Utilidades y
+Desarrollo YA NO tienen carrusel: se rediseñaron con identidad propia. Los
+archivos de esta carpeta ahora alimentan la IMAGEN SUPERIOR DE CADA TARJETA de
+esas páginas (mismo nombre de archivo, mismo funcionamiento: si no existe, se
+ve el ícono sobre un degradado de color; si existe, aparece sola).
+
+Archivos que usan las tarjetas de esas 7 páginas (61):
+  0ad.jpg, alpine-linux.jpg, angular.jpg, apache-openoffice.jpg, arch-linux.jpg, ardour.jpg, audacity.jpg, bash-shell.jpg, blender.jpg, brave.jpg, c-cpp.jpg, cryptpad.jpg, darktable.jpg, debian.jpg, django.jpg, docker.jpg, element.jpg, express-js.jpg, fedora.jpg, firefox.jpg, gimp.jpg, go.jpg, inkscape.jpg, javascript.jpg, jitsi-meet.jpg, julia.jpg, kali.jpg, kdenlive.jpg, kotlin.jpg, krita.jpg, kubernetes.jpg, laravel.jpg, libreoffice.jpg, linux-mint.jpg, lmms.jpg, lutris.jpg, minetest.jpg, nextcloud.jpg, nginx.jpg, nmap.jpg, obs.jpg, onlyoffice.jpg, openshot.jpg, php.jpg, postgresql.jpg, python.jpg, r.jpg, react.jpg, ruby.jpg, rust.jpg, spring-boot.jpg, steam.jpg, supertuxkart.jpg, svelte.jpg, tails.jpg, tensorflow.jpg, ubuntu.jpg, vs-code.jpg, vue-js.jpg, wireshark.jpg, zorin-os.jpg
+
+Las imágenes de HÉROE y de portada de cada categoría van en otra carpeta:
+img/herramientas/ (lee el LEEME.txt de allá).
+(La lista de abajo es la anterior; los nombres de las tarjetas nuevas son los de arriba.)
+
 
 Cada página de categoría tiene, arriba de todo, un carrusel ancho que
 va rotando 2 a 5 elementos destacados con una imagen de fondo grande.
 Ya está armado el ícono, el nombre, la descripción y el botón de cada
 slide -- solo falta la imagen de fondo.
 
+Además, en la página de Distribuciones Linux (distros.html) las 9
+tarjetas grandes de cada distro también usan imágenes de esta misma
+carpeta (mismo nombre de archivo) como fondo del recuadro superior.
+Mientras no exista el archivo, se ve el ícono grande sobre un fondo
+de color -- en cuanto guardes la imagen, la tarjeta la muestra sola.
+
 CÓMO AGREGAR UNA IMAGEN
 ----------------------------------------------
 1. Guardá la imagen en esta misma carpeta (img/carousel/) con el
    nombre exacto de la lista de abajo (ej: fedora.jpg).
-2. Listo -- no hace falta tocar el HTML ni el CSS. El carrusel ya
-   está programado para buscar la imagen ahí; en cuanto el archivo
-   exista, aparece sola (si ves el fondo oscuro con la cuadrícula,
-   es porque todavía no guardaste esa imagen).
+2. Listo -- no hace falta tocar el HTML ni el CSS. El carrusel y las
+   tarjetas de distros ya están programados para buscar la imagen ahí;
+   en cuanto el archivo exista, aparece sola (si ves el fondo oscuro
+   con la cuadrícula o el ícono grande, es porque todavía no guardaste
+   esa imagen).
 
 QUÉ TIPO DE IMAGEN CONVIENE
 ----------------------------------------------
 Estas SÍ pueden ser imágenes promocionales/artísticas (wallpapers,
 logos grandes, arte oficial del proyecto) -- no tienen que ser capturas
 reales de la interfaz, a diferencia de la sección 'Capturas' de cada
-ficha. El recuadro es ancho y bajo (ocupa todo el ancho de la página,
-320px de alto), se oscurece automáticamente con un degradado para que
-el texto se lea bien encima, y la imagen se recorta sola para llenar
-el espacio -- por eso conviene una imagen apaisada (más ancha que alta,
+ficha. El recuadro es apaisado (más ancho que alto) y se oscurece o
+recorta automáticamente para que el texto o el ícono se lean bien
+encima -- por eso conviene una imagen apaisada (más ancha que alta,
 ideal 1400-1600px de ancho) con el elemento principal centrado, para
 que no se corte al recortarse en pantallas angostas.
 
-Ya cargué ubuntu.jpg (la misma imagen que guardaste). El resto queda
-pendiente -- guardá las que tengas, no hace falta completarlas todas.
+Ya cargué ubuntu.jpg (la misma imagen que guardaste) -- se ve tanto en
+el carrusel superior de Distribuciones como en la tarjeta grande de
+Ubuntu. El resto queda pendiente -- guardá las que tengas, no hace
+falta completarlas todas.
 
 ----------------------------------------------
 LISTA DE ARCHIVOS NECESARIOS
@@ -37,17 +60,26 @@ LISTA DE ARCHIVOS NECESARIOS
   0ad.jpg
       0 A.D.  ->  aparece en: Juegos
 
+  alpine-linux.jpg
+      Alpine Linux  ->  aparece en: tarjeta grande en Distribuciones Linux
+
   apache.jpg
       Apache Foundation  ->  aparece en: Ecosistema
 
+  arch-linux.jpg
+      Arch Linux  ->  aparece en: tarjeta grande en Distribuciones Linux
+
   blender.jpg
       Blender  ->  aparece en: Edición: Imagen, Video y Audio, Herramientas (portada de categorías)
+
+  debian.jpg
+      Debian  ->  aparece en: tarjeta grande en Distribuciones Linux
 
   django.jpg
       Django  ->  aparece en: Desarrollo
 
   fedora.jpg
-      Fedora  ->  aparece en: Distribuciones Linux
+      Fedora  ->  aparece en: carrusel superior y tarjeta grande en Distribuciones Linux
 
   firefox.jpg
       Firefox  ->  aparece en: Otras Utilidades
@@ -74,7 +106,7 @@ LISTA DE ARCHIVOS NECESARIOS
       Hacktoberfest  ->  aparece en: Comunidad
 
   kali.jpg
-      Kali Linux  ->  aparece en: Distribuciones Linux
+      Kali Linux  ->  aparece en: carrusel superior y tarjeta grande en Distribuciones Linux
 
   kubernetes.jpg
       Kubernetes  ->  aparece en: Desarrollo
@@ -84,6 +116,9 @@ LISTA DE ARCHIVOS NECESARIOS
 
   linux.jpg
       Linux Kernel  ->  aparece en: Ecosistema
+
+  linux-mint.jpg
+      Linux Mint  ->  aparece en: tarjeta grande en Distribuciones Linux
 
   nextcloud.jpg
       Nextcloud + Collabora  ->  aparece en: Ofimática
@@ -109,5 +144,11 @@ LISTA DE ARCHIVOS NECESARIOS
   steam.jpg
       Steam + Proton  ->  aparece en: Juegos
 
+  tails.jpg
+      Tails  ->  aparece en: tarjeta grande en Distribuciones Linux
+
   ubuntu.jpg [YA CARGADA]
-      Ubuntu  ->  aparece en: Distribuciones Linux, Herramientas (portada de categorías)
+      Ubuntu  ->  aparece en: carrusel superior y tarjeta grande en Distribuciones Linux, Herramientas (portada de categorías)
+
+  zorin-os.jpg
+      Zorin OS  ->  aparece en: tarjeta grande en Distribuciones Linux

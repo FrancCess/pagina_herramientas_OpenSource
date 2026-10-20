@@ -1,0 +1,43 @@
+IMÁGENES DE LAS PÁGINAS DE HERRAMIENTAS — GUÍA RÁPIDA
+====================================================
+
+Cada página de categoría (Distros, Ofimática, Edición, Juegos, Utilidades,
+Desarrollo) y la portada de Herramientas tienen su propio diseño. Los
+espacios para imágenes ya están listos: guardá el archivo con el nombre exacto
+en ESTA carpeta (img/herramientas/) y aparece solo. No hace falta tocar el
+HTML ni el CSS. Mientras no exista el archivo se ve un fondo degradado de
+color propio de cada página, así que nada se ve roto.
+
+FORMATO: JPG, apaisado (más ancho que alto), 1400-1600 px de ancho,
+menos de 300 KB si se puede. Pueden ser wallpapers, arte oficial de cada
+proyecto o fotos libres (Unsplash, Pexels, Wikimedia Commons). El diseño las
+oscurece un poco para que el texto se lea, así que sirve cualquier imagen con
+el sujeto principal hacia el centro o la derecha.
+
+1) IMÁGENES DE FONDO DEL ENCABEZADO (una por página) — 7 archivos
+   hero-hub.jpg          -> portada de Herramientas (tecnología / constelación)
+   hero-distros.jpg      -> Distros Linux (escritorio Linux, pingüino, terminal)
+   hero-ofimatica.jpg    -> Ofimática (documentos, oficina, escritorio de trabajo)
+   hero-edicion.jpg      -> Edición (estudio creativo, línea de tiempo, retoque)
+   hero-juegos.jpg       -> Juegos (gamer, consola, escena de videojuego)
+   hero-utilidades.jpg   -> Utilidades (setup, teclado, servidores)
+   hero-desarrollo.jpg   -> Desarrollo (código en pantalla, programador)
+
+2) PANELES DE LA PORTADA (acordeón "Elige por dónde empezar") — 6 archivos
+   hub-distros.jpg  hub-ofimatica.jpg  hub-edicion.jpg
+   hub-juegos.jpg   hub-utilidades.jpg hub-desarrollo.jpg
+   Conviene que sean más altas que anchas o con el sujeto al centro, porque
+   los paneles son verticales (se recortan a los lados).
+
+3) EDICIÓN: ANTES Y DESPUÉS — 2 archivos
+   edicion-antes.jpg     -> una foto sin retocar (plana, apagada)
+   edicion-despues.jpg   -> LA MISMA foto retocada (con GIMP / Darktable)
+   Deben tener las mismas proporciones y el mismo encuadre para que el
+   deslizador funcione. Si todavía no las tenés, se muestra un paisaje ilustrado.
+
+4) TARJETAS DE CADA HERRAMIENTA
+   Usan las imágenes de img/carousel/ (lee el LEEME.txt de esa carpeta).
+   Son opcionales: sin imagen se ve el ícono de la herramienta sobre un
+   degradado con su color de marca.
+
+TOTAL DE ESTA CARPETA: 15 imágenes (todas opcionales).

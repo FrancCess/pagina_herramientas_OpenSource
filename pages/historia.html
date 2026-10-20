@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historia del Open Source · Open Source</title>
+<meta name="description" content="La línea de tiempo del software libre: desde el Proyecto GNU en 1983 hasta el ecosistema actual.">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<link rel="alternate icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="ecosistema.html">Visión general</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="que-es.html">¿Qué es?</a></li>
+              <li><a class="dropdown-item active" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="organizaciones.html">Organizaciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item" href="ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item" href="edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="comunidad.html#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="comunidad.html#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="comunidad.html#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <p class="reveal" style="margin-top: 28px; margin-bottom: -6px;"><a href="ecosistema.html" class="hub-link" style="text-decoration:none;">&larr; Ecosistema</a></p>
+
+      <header class="eco-hero">
+        <div class="eco-hero-grid">
+          <div>
+            <span class="eco-eyebrow">Ecosistema · 02 de 03</span>
+            <h1>Cuatro décadas de <em>código abierto</em>.</h1>
+            <p class="eco-lead">Una línea de tiempo desde el Proyecto GNU hasta el ecosistema actual: las personas, las licencias y las plataformas que convirtieron una idea en la infraestructura del software mundial.</p>
+            <div class="eco-stats">
+              <div class="eco-stat"><b data-count="43">43</b><small>años desde que nació GNU</small></div>
+              <div class="eco-stat"><b data-count="14">14</b><small>paradas en la línea de tiempo</small></div>
+              <div class="eco-stat"><b data-count="3">3</b><small>eras: orígenes, expansión y actualidad</small></div>
+            </div>
+          </div>
+          <div class="code-win" aria-hidden="true">
+            <div class="code-win-bar"><i></i><i></i><i></i><span>terminal — historia</span></div>
+<pre><span class="code-line" style="--i:0"><span class="k">$</span> git log --oneline --graph</span><span class="code-line" style="--i:1"><span class="k">*</span> <span class="n">2018</span>  Microsoft compra GitHub</span><span class="code-line" style="--i:2"><span class="k">*</span> <span class="n">2014</span>  nace Kubernetes</span><span class="code-line" style="--i:3"><span class="k">*</span> <span class="n">2008</span>  llegan GitHub y Android</span><span class="code-line" style="--i:4"><span class="k">*</span> <span class="n">1998</span>  se acuña "Open Source"</span><span class="code-line" style="--i:5"><span class="k">*</span> <span class="n">1991</span>  Linus publica Linux</span><span class="code-line" style="--i:6"><span class="k">*</span> <span class="n">1983</span>  Stallman lanza GNU</span><span class="code-line" style="--i:7"><span class="k">$</span> <span class="code-caret"></span></span></pre>
+          </div>
+        </div>
+      </header>
+
+      <section class="eco-sec" id="historia">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3M12 3a9 9 0 100 18 9 9 0 000-18z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>Línea del tiempo</h2>
+        </div>
+        <p class="section-intro reveal">Recorre la historia haciendo scroll: la línea se enciende a medida que avanzas.</p>
+        <div class="tl">
+          <div class="tl-item reveal" data-era="origenes">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">1983</span><span class="tl-tag">Proyecto</span></div>
+              <h3>Proyecto GNU</h3>
+              <p>Richard Stallman inicia GNU con el objetivo de crear un sistema operativo completo compuesto enteramente por software libre.</p>
+              
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="origenes">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">1985</span><span class="tl-tag">Organización</span></div>
+              <h3>Free Software Foundation</h3>
+              <p>Stallman funda la FSF para dar soporte legal y organizativo al movimiento del software libre y publicar las licencias GPL.</p>
+              
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="origenes">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">1989</span><span class="tl-tag">Licencia</span></div>
+              <h3>Primera licencia GPL</h3>
+              <p>Se publica la primera versión de la Licencia Pública General GNU. Introduce el copyleft: puedes modificar y compartir el software, pero tus versiones deben seguir siendo libres.</p>
+              <a class="tl-link" href="que-es.html#licencias">Ver licencias <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="origenes">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">1991</span><span class="tl-tag">Software</span></div>
+              <h3>Nace Linux</h3>
+              <p>Linus Torvalds publica el kernel Linux. Combinado con las herramientas de GNU, da origen a un sistema operativo libre completo que hoy corre en servidores, teléfonos y supercomputadoras.</p>
+              
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="origenes">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">1993</span><span class="tl-tag">Comunidad</span></div>
+              <h3>Debian</h3>
+              <p>Ian Murdock anuncia Debian, una distribución construida de forma abierta por voluntarios. Hoy es la base de Ubuntu y de cientos de distribuciones derivadas.</p>
+              <a class="tl-link" href="tools/debian.html">Ver Debian <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="expansion">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">1998</span><span class="tl-tag">Organización</span></div>
+              <h3>Se acuña "Open Source"</h3>
+              <p>Tras el anuncio de Netscape de liberar su código, se funda la Open Source Initiative (OSI) para facilitar la adopción comercial del modelo.</p>
+              <a class="tl-link" href="organizaciones.html">Ver organizaciones <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="expansion">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">2004</span><span class="tl-tag">Software</span></div>
+              <h3>Ubuntu</h3>
+              <p>Canonical lanza Ubuntu, una distribución basada en Debian pensada para que Linux sea fácil de instalar y usar en el escritorio.</p>
+              <a class="tl-link" href="tools/ubuntu.html">Ver Ubuntu <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="expansion">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">2005</span><span class="tl-tag">Software</span></div>
+              <h3>Git</h3>
+              <p>Torvalds crea Git, el sistema de control de versiones distribuido que cambiaría para siempre la forma de colaborar en proyectos de código.</p>
+              <a class="tl-link" href="tools/git.html">Ver Git <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="expansion">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">2008</span><span class="tl-tag">Plataforma</span></div>
+              <h3>GitHub</h3>
+              <p>El lanzamiento de GitHub simplifica alojar, compartir y contribuir a proyectos, acelerando la colaboración masiva a escala global.</p>
+              
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="expansion">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">2008</span><span class="tl-tag">Software</span></div>
+              <h3>Android</h3>
+              <p>Llega el primer teléfono con Android, basado en el kernel Linux y con gran parte de su código abierto. Hoy está en miles de millones de dispositivos.</p>
+              
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="actual">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">2013</span><span class="tl-tag">Software</span></div>
+              <h3>Docker</h3>
+              <p>Docker populariza los contenedores como una forma ligera de empaquetar y desplegar aplicaciones de manera reproducible.</p>
+              <a class="tl-link" href="tools/docker.html">Ver Docker <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="actual">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">2014</span><span class="tl-tag">Software</span></div>
+              <h3>Kubernetes</h3>
+              <p>Google publica Kubernetes, el orquestador de contenedores que poco después pasaría a la Cloud Native Computing Foundation, dentro de la Linux Foundation.</p>
+              <a class="tl-link" href="tools/kubernetes.html">Ver Kubernetes <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal" data-era="actual">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">2018</span><span class="tl-tag">Empresa</span></div>
+              <h3>Microsoft compra GitHub</h3>
+              <p>Microsoft adquiere GitHub en un giro simbólico: una empresa históricamente asociada al software propietario pasa a ser uno de los mayores contribuyentes del open source.</p>
+              <a class="tl-link" href="orgs/microsoft-open-source.html">Ver ficha <span>→</span></a>
+            </div>
+          </div>
+          <div class="tl-item reveal tl-now" data-era="actual">
+            <span class="tl-node"></span>
+            <div class="tl-card">
+              <div class="tl-head"><span class="tl-year">Hoy</span><span class="tl-tag">Presente</span></div>
+              <h3>Un ecosistema consolidado</h3>
+              <p>Linux, Python, Kubernetes, VS Code, Android y miles de proyectos más sostienen la industria del software mundial — todos abiertos, todos accesibles.</p>
+              <a class="tl-link" href="organizaciones.html">Quién los sostiene <span>→</span></a>
+            </div>
+          </div>
+          <div class="bit-guide" data-bit-guide role="button" tabindex="0" aria-label="Bit, tu guía: te acompaña por la línea del tiempo y mira cada hito. Pulsa para verlo saltar">
+            <div class="bit-g-jet" aria-hidden="true"></div>
+            <div class="bit-g-bob">
+              <svg class="bit-g-head" data-bit-head viewBox="0 0 260 230" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="bgHead" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d7e2f2"/></linearGradient>
+                  <linearGradient id="bgScreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10264a"/><stop offset="1" stop-color="#071329"/></linearGradient>
+                </defs>
+                <line x1="130" y1="40" x2="130" y2="16" stroke="#9fb3cf" stroke-width="6" stroke-linecap="round"/>
+                <circle class="bit-led" cx="130" cy="12" r="10" fill="#C8F135"/>
+                <rect x="4" y="90" width="26" height="58" rx="13" fill="#C8F135"/>
+                <rect x="230" y="90" width="26" height="58" rx="13" fill="#C8F135"/>
+                <path d="M21 106 L13 119 L21 132" fill="none" stroke="#0B1E3D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M239 106 L247 119 L239 132" fill="none" stroke="#0B1E3D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="22" y="38" width="216" height="168" rx="56" fill="url(#bgHead)" stroke="#b4c4dc" stroke-width="2"/>
+                <ellipse cx="82" cy="58" rx="34" ry="9" fill="#fff" opacity=".7"/>
+                <g data-bit-face>
+                  <rect x="46" y="62" width="168" height="120" rx="36" fill="url(#bgScreen)"/>
+                  <ellipse cx="66" cy="148" rx="13" ry="8" fill="#ff8fb1" opacity=".5"/>
+                  <ellipse cx="194" cy="148" rx="13" ry="8" fill="#ff8fb1" opacity=".5"/>
+                  <g class="bit-eyes">
+                    <g data-eye="98 112"><circle r="27" fill="#fff"/><g data-pupil><circle r="13" fill="#0B1E3D"/><circle cx="-4.5" cy="-4.5" r="4.5" fill="#fff"/><circle cx="5" cy="5" r="2" fill="#fff" opacity=".7"/></g></g>
+                    <g data-eye="162 112"><circle r="27" fill="#fff"/><g data-pupil><circle r="13" fill="#0B1E3D"/><circle cx="-4.5" cy="-4.5" r="4.5" fill="#fff"/><circle cx="5" cy="5" r="2" fill="#fff" opacity=".7"/></g></g>
+                  </g>
+                  <g class="bit-happy" fill="none" stroke="#C8F135" stroke-width="8" stroke-linecap="round"><path d="M72 120 Q98 88 124 120"/><path d="M136 120 Q162 88 188 120"/></g>
+                  <path class="bit-mouth" d="M114 154 Q130 166 146 154" fill="none" stroke="#C8F135" stroke-width="5" stroke-linecap="round"/>
+                  <path class="bit-mouth-open" d="M108 150 Q130 182 152 150 Z" fill="#C8F135"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="eco-sec" id="personas">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>Personas que marcaron la historia</h2>
+        </div>
+        <p class="section-intro reveal">Detrás de cada hito hay personas que decidieron compartir su trabajo. Elige una para conocer su historia.</p>
+        <!-- Fotos de las personas: guarda cada retrato en img/ecosistema/personas/ con el nombre indicado
+             (stallman.jpg, torvalds.jpg, murdock.jpg, raymond.jpg, perens.jpg) y aparece solo.
+             Para el crédito de la foto, edita el texto del <span class="bio-credit"> de cada persona. -->
+        <div class="eco-tabs bio-tabs reveal" data-tabs>
+          <div class="eco-tablist" role="tablist" aria-label="Personas que marcaron la historia del código abierto">
+            <button class="eco-tab" role="tab" id="bio-tab-stallman" aria-controls="bio-panel-stallman" aria-selected="true" tabindex="0" type="button"><span class="n">RS</span><span><strong>Richard Stallman</strong><small>1953 · EE. UU.</small></span></button>
+            <button class="eco-tab" role="tab" id="bio-tab-torvalds" aria-controls="bio-panel-torvalds" aria-selected="false" tabindex="-1" type="button"><span class="n">LT</span><span><strong>Linus Torvalds</strong><small>1969 · Finlandia</small></span></button>
+            <button class="eco-tab" role="tab" id="bio-tab-murdock" aria-controls="bio-panel-murdock" aria-selected="false" tabindex="-1" type="button"><span class="n">IM</span><span><strong>Ian Murdock</strong><small>1973 – 2015</small></span></button>
+            <button class="eco-tab" role="tab" id="bio-tab-raymond" aria-controls="bio-panel-raymond" aria-selected="false" tabindex="-1" type="button"><span class="n">ER</span><span><strong>Eric S. Raymond</strong><small>1957 · EE. UU.</small></span></button>
+            <button class="eco-tab" role="tab" id="bio-tab-perens" aria-controls="bio-panel-perens" aria-selected="false" tabindex="-1" type="button"><span class="n">BP</span><span><strong>Bruce Perens</strong><small>EE. UU.</small></span></button>
+          </div>
+          <div>
+          <div class="eco-panel bio-panel" role="tabpanel" id="bio-panel-stallman" aria-labelledby="bio-tab-stallman">
+            <figure class="bio-photo">
+              <div class="bio-ph"><b>RS</b><code>personas/stallman.jpg</code></div>
+              <img src="../img/ecosistema/personas/stallman.jpg" alt="Ilustración de Richard Stallman generada con IA" loading="lazy" onerror="this.style.display='none'">
+              <figcaption>Imagen: <span class="bio-credit">ilustración generada con IA (Gemini), no es una fotografía real</span></figcaption>
+            </figure>
+            <div class="bio-body">
+              <span class="bio-role">Fundador de GNU y de la FSF</span>
+              <h3>Richard Stallman</h3>
+              <p>Programador nacido en Nueva York en 1953. Trabajó en el laboratorio de Inteligencia Artificial del MIT, donde compartir el código era lo normal entre quienes programaban. Cuando vio que el software se volvía cada vez más cerrado, decidió actuar.</p><p>En 1983 anunció el Proyecto GNU para construir un sistema operativo completamente libre y en 1985 fundó la Free Software Foundation. Es autor de GNU Emacs y del compilador GCC, y redactó la Licencia Pública General (GPL), la base legal del copyleft.</p>
+              <dl class="bio-facts">
+                <div><dt>País</dt><dd>Estados Unidos (Nueva York)</dd></div>
+                <div><dt>Conocido por</dt><dd>Proyecto GNU, FSF, licencia GPL, GCC y Emacs</dd></div>
+                <div><dt>Distinción</dt><dd>Beca MacArthur (1990)</dd></div>
+              </dl>
+              <div class="bio-hitos"><small>En la línea de tiempo:</small><span>1983</span><span>1985</span><span>1989</span></div>
+              <div class="eco-example"><b>Dato curioso</b><span>Las libertades del software libre se numeran desde cero: la libertad 0 se reconoció después de las otras tres y se puso primero por ser la base de todas.</span></div>
+            </div>
+          </div>
+          <div class="eco-panel bio-panel" role="tabpanel" id="bio-panel-torvalds" aria-labelledby="bio-tab-torvalds" hidden>
+            <figure class="bio-photo">
+              <div class="bio-ph"><b>LT</b><code>personas/torvalds.jpg</code></div>
+              <img src="../img/ecosistema/personas/torvalds.jpg" alt="Ilustración de Linus Torvalds generada con IA" loading="lazy" onerror="this.style.display='none'">
+              <figcaption>Imagen: <span class="bio-credit">ilustración generada con IA (Gemini), no es una fotografía real</span></figcaption>
+            </figure>
+            <div class="bio-body">
+              <span class="bio-role">Creador de Linux y de Git</span>
+              <h3>Linus Torvalds</h3>
+              <p>Nació en Helsinki en 1969. En 1991, siendo estudiante de la Universidad de Helsinki, publicó la primera versión de un kernel que había escrito por afición para su computadora personal. Al combinarlo con las herramientas de GNU nació el sistema operativo que hoy conocemos como Linux.</p><p>En 2005 creó Git para coordinar el desarrollo del propio kernel, cuando necesitaba una herramienta rápida, distribuida y libre. Más de tres décadas después sigue coordinando el desarrollo del kernel, con miles de personas contribuyendo.</p>
+              <dl class="bio-facts">
+                <div><dt>País</dt><dd>Finlandia (vive en Estados Unidos)</dd></div>
+                <div><dt>Conocido por</dt><dd>Kernel Linux y Git</dd></div>
+                <div><dt>Distinción</dt><dd>Premio Millennium Technology (2012)</dd></div>
+              </dl>
+              <div class="bio-hitos"><small>En la línea de tiempo:</small><span>1991</span><span>2005</span></div>
+              <div class="eco-example"><b>Dato curioso</b><span>El nombre viene de "Linus" + "Unix". Torvalds quería llamarlo "Freax", pero el administrador del servidor donde lo publicó nombró la carpeta "linux".</span></div>
+            </div>
+          </div>
+          <div class="eco-panel bio-panel" role="tabpanel" id="bio-panel-murdock" aria-labelledby="bio-tab-murdock" hidden>
+            <figure class="bio-photo">
+              <div class="bio-ph"><b>IM</b><code>personas/murdock.jpg</code></div>
+              <img src="../img/ecosistema/personas/murdock.jpg" alt="Ilustración de Ian Murdock generada con IA" loading="lazy" onerror="this.style.display='none'">
+              <figcaption>Imagen: <span class="bio-credit">ilustración generada con IA (Gemini), no es una fotografía real</span></figcaption>
+            </figure>
+            <div class="bio-body">
+              <span class="bio-role">Fundador de Debian</span>
+              <h3>Ian Murdock</h3>
+              <p>Nació en 1973 y estudiaba en la Universidad de Purdue cuando, en agosto de 1993, anunció Debian: una distribución desarrollada de forma abierta por una comunidad, en lugar de por una sola empresa.</p><p>Debian se convirtió en una de las bases más importantes del ecosistema: de ella derivan Ubuntu y cientos de distribuciones más. Más adelante Murdock fue director de tecnología del Free Standards Group y de la Linux Foundation, y luego trabajó en Sun Microsystems. Falleció en 2015.</p>
+              <dl class="bio-facts">
+                <div><dt>País</dt><dd>Alemania Occidental, criado en Estados Unidos</dd></div>
+                <div><dt>Conocido por</dt><dd>Debian GNU/Linux</dd></div>
+                <div><dt>Cargo</dt><dd>CTO del Free Standards Group y la Linux Foundation (2006–2007)</dd></div>
+              </dl>
+              <div class="bio-hitos"><small>En la línea de tiempo:</small><span>1993</span><span>2004</span></div>
+              <div class="eco-example"><b>Dato curioso</b><span>El nombre Debian une "Debra", el nombre de su pareja de entonces, con "Ian".</span></div>
+            </div>
+          </div>
+          <div class="eco-panel bio-panel" role="tabpanel" id="bio-panel-raymond" aria-labelledby="bio-tab-raymond" hidden>
+            <figure class="bio-photo">
+              <div class="bio-ph"><b>ER</b><code>personas/raymond.jpg</code></div>
+              <img src="../img/ecosistema/personas/raymond.jpg" alt="Ilustración de Eric S. Raymond generada con IA" loading="lazy" onerror="this.style.display='none'">
+              <figcaption>Imagen: <span class="bio-credit">ilustración generada con IA (Gemini), no es una fotografía real</span></figcaption>
+            </figure>
+            <div class="bio-body">
+              <span class="bio-role">Cofundador de la OSI</span>
+              <h3>Eric S. Raymond</h3>
+              <p>Programador y escritor estadounidense nacido en 1957. Su ensayo "La catedral y el bazar" (1997) comparó el desarrollo cerrado, tipo catedral, con el desarrollo abierto y caótico de Linux, tipo bazar, y defendió que muchos ojos revisando el código producen mejor software.</p><p>Ese texto influyó en la decisión de Netscape de liberar su código en 1998. Poco después Raymond ayudó a fundar la Open Source Initiative y a promover el término "Open Source" como una forma más amigable para las empresas de hablar de software libre.</p>
+              <dl class="bio-facts">
+                <div><dt>País</dt><dd>Estados Unidos</dd></div>
+                <div><dt>Conocido por</dt><dd>"La catedral y el bazar" y el término Open Source</dd></div>
+                <div><dt>Cargo</dt><dd>Cofundador de la Open Source Initiative</dd></div>
+              </dl>
+              <div class="bio-hitos"><small>En la línea de tiempo:</small><span>1998</span></div>
+              <div class="eco-example"><b>Dato curioso</b><span>"La catedral y el bazar" se publicó primero como ensayo en línea y después como libro.</span></div>
+            </div>
+          </div>
+          <div class="eco-panel bio-panel" role="tabpanel" id="bio-panel-perens" aria-labelledby="bio-tab-perens" hidden>
+            <figure class="bio-photo">
+              <div class="bio-ph"><b>BP</b><code>personas/perens.jpg</code></div>
+              <img src="../img/ecosistema/personas/perens.jpg" alt="Ilustración de Bruce Perens generada con IA" loading="lazy" onerror="this.style.display='none'">
+              <figcaption>Imagen: <span class="bio-credit">ilustración generada con IA (Gemini), no es una fotografía real</span></figcaption>
+            </figure>
+            <div class="bio-body">
+              <span class="bio-role">Cofundador de la OSI</span>
+              <h3>Bruce Perens</h3>
+              <p>Programador estadounidense que lideró el Proyecto Debian entre 1996 y 1997, tras Ian Murdock. En esa etapa escribió las Debian Free Software Guidelines, un conjunto de criterios para decidir qué software puede considerarse libre.</p><p>Ese documento sirvió de base para la Definición de Open Source, que la Open Source Initiative adoptó en 1998 cuando él y Eric Raymond la fundaron. También es conocido por BusyBox, un conjunto de herramientas muy usado en sistemas Linux embebidos.</p>
+              <dl class="bio-facts">
+                <div><dt>País</dt><dd>Estados Unidos</dd></div>
+                <div><dt>Conocido por</dt><dd>Definición de Open Source y Debian Free Software Guidelines</dd></div>
+                <div><dt>Cargo</dt><dd>Líder del Proyecto Debian (1996–1997)</dd></div>
+              </dl>
+              <div class="bio-hitos"><small>En la línea de tiempo:</small><span>1998</span></div>
+              <div class="eco-example"><b>Dato curioso</b><span>La Definición de Open Source sigue siendo el estándar para decidir si una licencia es realmente "open source".</span></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MOSAICO DE 5 IMÁGENES ============
+           Guarda tus fotos en img/ecosistema/ con estos nombres exactos y aparecen solas
+           (no hay que tocar el HTML): historia-1.jpg ... historia-5.jpg
+           La 1 es la grande. Para cambiar el pie de foto, edita el texto de <figcaption>. -->
+      <section class="eco-sec" id="galeria-historia">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="white" stroke-width="2"/><circle cx="9" cy="10" r="1.8" fill="white"/><path d="M4 18l5-5 4 4 3-3 4 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>La historia en imágenes</h2>
+        </div>
+        <p class="section-intro reveal">Cinco escenas que resumen cómo ha cambiado la forma de compartir software, de los laboratorios de los 80 a la colaboración global de hoy.</p>
+        <div class="eco-gallery">
+          <figure class="eco-shot reveal" style="--i:0">
+            <div class="eco-shot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 4 3-3 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Imagen 1</b><code>historia-1.jpg</code></div>
+            <img src="../img/ecosistema/historia-1.jpg" alt="Años 80: laboratorios universitarios donde el código se compartía impreso (ilustración generada con IA)" loading="lazy" onerror="this.style.display='none'">
+            <figcaption data-n="1">Años 80: laboratorios universitarios donde el código se compartía impreso</figcaption>
+          </figure>
+          <figure class="eco-shot reveal" style="--i:1">
+            <div class="eco-shot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 4 3-3 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Imagen 2</b><code>historia-2.jpg</code></div>
+            <img src="../img/ecosistema/historia-2.jpg" alt="Programadores de la época de GNU, entre terminales, manuales y disquetes (ilustración generada con IA)" loading="lazy" onerror="this.style.display='none'">
+            <figcaption data-n="2">Programadores de la época de GNU, entre terminales, manuales y disquetes</figcaption>
+          </figure>
+          <figure class="eco-shot reveal" style="--i:2">
+            <div class="eco-shot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 4 3-3 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Imagen 3</b><code>historia-3.jpg</code></div>
+            <img src="../img/ecosistema/historia-3.jpg" alt="1991: un estudiante comparte su programa con el mundo a través de internet (ilustración generada con IA)" loading="lazy" onerror="this.style.display='none'">
+            <figcaption data-n="3">1991: un estudiante comparte su programa con el mundo a través de internet</figcaption>
+          </figure>
+          <figure class="eco-shot reveal" style="--i:3">
+            <div class="eco-shot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 4 3-3 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Imagen 4</b><code>historia-4.jpg</code></div>
+            <img src="../img/ecosistema/historia-4.jpg" alt="Los 2000: personas de todo el planeta colaboran en los mismos proyectos (ilustración generada con IA)" loading="lazy" onerror="this.style.display='none'">
+            <figcaption data-n="4">Los 2000: personas de todo el planeta colaboran en los mismos proyectos</figcaption>
+          </figure>
+          <figure class="eco-shot reveal" style="--i:4">
+            <div class="eco-shot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.8" fill="currentColor"/><path d="M4 18l5-5 4 4 3-3 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Imagen 5</b><code>historia-5.jpg</code></div>
+            <img src="../img/ecosistema/historia-5.jpg" alt="Hoy: equipos diversos trabajan con ramas de código y control de versiones (ilustración generada con IA)" loading="lazy" onerror="this.style.display='none'">
+            <figcaption data-n="5">Hoy: equipos diversos trabajan con ramas de código y control de versiones</figcaption>
+          </figure>
+        </div>
+        <p class="eco-gallery-tip reveal">Ilustraciones generadas con IA (Gemini); no son fotografías reales. Haz clic en una imagen para verla en grande.</p>
+      </section>
+
+      <nav class="page-nav reveal" aria-label="Navegación entre secciones del ecosistema">
+        <a href="que-es.html" class="prev"><small>← Anterior</small><strong>¿Qué es?</strong><span>Qué es el código abierto</span></a>
+        <a href="organizaciones.html" class="next"><small>Siguiente →</small><strong>Organizaciones</strong><span>Quién sostiene los grandes proyectos</span></a>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="../index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/bit-guia.js"></script>
+
+</body>
+</html>
