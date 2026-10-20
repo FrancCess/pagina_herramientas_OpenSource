@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comunidad · Open Source</title>
+<meta name="description" content="Cómo contribuir a proyectos open source, comparativa con herramientas comerciales y galería del ecosistema.">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<link rel="alternate icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="cm-page">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="ecosistema.html">Visión general</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="que-es.html">¿Qué es?</a></li>
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="organizaciones.html">Organizaciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item" href="ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item" href="edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO CON PARALLAX ============ -->
+  <header class="cm-hero" data-cm-hero>
+    <div class="cm-hero-grid" aria-hidden="true"></div>
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <div class="cm-eyebrow"><span></span>Comunidad</div>
+          <h1>Tu primera <em>contribución</em> empieza aquí.</h1>
+          <p class="cm-lead">No necesitas ser experto: muchas primeras contribuciones son documentación o traducción, no código.</p>
+          <div class="cm-cta">
+            <a href="#participar" class="cm-btn cm-btn-main">Ver los 5 pasos <span>↓</span></a>
+            <a href="#alternativas" class="cm-btn cm-btn-ghost">Calcular mi ahorro</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="cm-scene" data-cm-scene aria-hidden="true">
+            <div class="cm-l cm-ring" style="--d:.3"><i></i></div>
+            <div class="cm-l cm-stars" style="--d:.6"><div class="cm-f"><span>★</span> Star</div></div>
+            <div class="cm-l cm-term" style="--d:.8"><div class="cm-f">
+              <div class="cm-dots"><i></i><i></i><i></i></div>
+              <code><b>$</b> git commit -m "docs: mi primer aporte"</code>
+              <code class="cm-dim">[main a1b2c3d] 1 file changed</code>
+            </div></div>
+            <div class="cm-l cm-pr" style="--d:1"><div class="cm-f">
+              <div class="cm-pr-head"><span class="cm-pr-ic">⑂</span><b>Pull request #128</b><span class="cm-merged">Merged</span></div>
+              <p>docs: corrige errores de ortografía en la guía</p>
+              <div class="cm-diff"><span class="rm">− Instlación</span><span class="ad">+ Instalación</span></div>
+              <div class="cm-pr-foot"><span class="cm-av a1">AN</span><span class="cm-av a2">LU</span><span class="cm-pr-ok">✓ Aprobado por el mantenedor</span></div>
+            </div></div>
+            <div class="cm-l cm-issue" style="--d:1.6"><div class="cm-f"><span class="cm-label">good first issue</span><b>#42 Traducir la guía al español</b></div></div>
+            <div class="cm-l cm-crowd" style="--d:2"><div class="cm-f"><span class="cm-av a1">MA</span><span class="cm-av a3">JO</span><span class="cm-av a2">SO</span><span class="cm-av a4">+∞</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- ============ PARTICIPAR ============ -->
+      <section id="participar">
+        <div class="section-head reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <h2>Cómo Participar en Open Source</h2>
+        </div>
+        <p class="section-intro reveal">No necesitas ser experto para contribuir. Muchas primeras contribuciones son correcciones de documentación o traducción, no código.</p>
+
+        <div class="row align-items-start gy-4">
+          <div class="col-lg-7 reveal">
+            <div class="stepper">
+              <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-body"><h4>Elige un proyecto</h4><p>Busca en GitHub con el filtro <strong>"good first issue"</strong>. Son issues marcados por mantenedores como accesibles para nuevos contribuidores.</p></div>
+              </div>
+              <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-body"><h4>Haz un fork</h4><p>Crea tu propia copia del repositorio. Los cambios que hagas aquí no afectan al proyecto original hasta que tú lo decidas.</p></div>
+              </div>
+              <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-body"><h4>Clona y crea una rama</h4><p>Trabaja en una rama separada: <code>git checkout -b fix/nombre-del-bug</code>. Mantén tus cambios enfocados y atómicos.</p></div>
+              </div>
+              <div class="step">
+                <div class="step-num">4</div>
+                <div class="step-body"><h4>Haz commit y push</h4><p>Escribe mensajes claros: <code>fix: corrige error de validación en formulario</code>. Sube tu rama a tu fork en GitHub.</p></div>
+              </div>
+              <div class="step">
+                <div class="step-num">5</div>
+                <div class="step-body"><h4>Abre un Pull Request</h4><p>Describe qué cambió y por qué. El mantenedor lo revisará, te dará feedback y, si todo está bien, tu cambio se integra al proyecto.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal">
+            <div class="resources-box">
+              <h4 class="resources-title">Programas para empezar</h4>
+              <div class="resource-item">
+                <div class="resource-icon">🎃</div>
+                <div><strong>Hacktoberfest</strong><p>Cada octubre: contribuye con PRs a proyectos abiertos y gana insignias digitales. Una de las puertas de entrada más conocidas al open source.</p></div>
+              </div>
+              <div class="resource-item">
+                <div class="resource-icon">☀️</div>
+                <div><strong>Google Summer of Code</strong><p>Programa de Google con beca para estudiantes y principiantes que quieran contribuir a proyectos abiertos.</p></div>
+              </div>
+              <div class="resource-item">
+                <div class="resource-icon">🌍</div>
+                <div><strong>Outreachy</strong><p>Internships remotos pagados en proyectos open source para grupos subrepresentados.</p></div>
+              </div>
+              <div class="resource-item">
+                <div class="resource-icon">🔍</div>
+                <div><strong>Up For Grabs</strong><p>Directorio de proyectos con issues etiquetados listos para nuevos contribuidores.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ALTERNATIVAS ============ -->
+      <section id="alternativas">
+        <div class="section-head reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3M3 16v3a2 2 0 002 2h3m8 0h3a2 2 0 002-2v-3" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h2>Open Source vs Comercial: Guía de Alternativas</h2>
+        </div>
+        <p class="section-intro reveal">Casi cada herramienta de pago tiene una alternativa open source muy capaz. Aquí el mapa completo, con el ahorro real que implica cambiar.</p>
+
+        <div class="reveal">
+          <div class="alt-table-wrapper">
+            <table class="alt-table">
+              <thead>
+                <tr><th class="alt-th-check">Uso esto</th><th>Categoría</th><th>🔒 Comercial (pago)</th><th>✅ Open Source (gratis)</th><th>Ahorro aprox.*</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="200" aria-label="Cuento Sistema operativo"></td><td>Sistema operativo</td><td>Windows 11 Pro</td><td>Ubuntu, Fedora, Debian</td><td class="saving">~$200 (pago único)</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="100" aria-label="Cuento Ofimática"></td><td>Ofimática</td><td>Microsoft Office 365</td><td>LibreOffice, OnlyOffice</td><td class="saving">$100+/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="275" aria-label="Cuento Edición de imagen"></td><td>Edición de imagen</td><td>Adobe Photoshop</td><td>GIMP, Krita</td><td class="saving">~$275/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="275" aria-label="Cuento Diseño vectorial"></td><td>Diseño vectorial</td><td>Adobe Illustrator</td><td>Inkscape</td><td class="saving">~$275/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="360" aria-label="Cuento Edición de video"></td><td>Edición de video</td><td>Adobe Premiere Pro</td><td>Kdenlive, OpenShot</td><td class="saving">$360/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="120" aria-label="Cuento Retoque fotográfico"></td><td>Retoque fotográfico</td><td>Adobe Lightroom</td><td>Darktable, RawTherapee</td><td class="saving">$120/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="720" aria-label="Cuento Modelado 3D"></td><td>Modelado 3D</td><td>Cinema 4D / AutoCAD</td><td>Blender, FreeCAD</td><td class="saving">$720+/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="300" aria-label="Cuento Streaming / Grabación"></td><td>Streaming / Grabación</td><td>Camtasia</td><td>OBS Studio</td><td class="saving">$300/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="2000" aria-label="Cuento Base de datos"></td><td>Base de datos</td><td>Oracle DB, MS SQL</td><td>PostgreSQL, MySQL, MariaDB</td><td class="saving">Miles/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="500" aria-label="Cuento Servidor web"></td><td>Servidor web</td><td>Servidores web comerciales</td><td>Apache, Nginx, Caddy</td><td class="saving">$500+/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="120" aria-label="Cuento Almacenamiento nube"></td><td>Almacenamiento nube</td><td>Google Drive, Dropbox</td><td>Nextcloud (auto-alojado)</td><td class="saving">$120/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="180" aria-label="Cuento Videoconferencia"></td><td>Videoconferencia</td><td>Zoom, Teams</td><td>Jitsi Meet, BigBlueButton</td><td class="saving">$180+/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="540" aria-label="Cuento IDE / Editor"></td><td>IDE / Editor</td><td>Visual Studio (completo)</td><td>VS Code, Eclipse, Vim</td><td class="saving">$45+/mes</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="300" aria-label="Cuento Gestión de proyectos"></td><td>Gestión de proyectos</td><td>Jira, Asana</td><td>GitLab, OpenProject, Taiga</td><td class="saving">$300+/año</td></tr>
+                <tr><td class="alt-td-check"><input type="checkbox" class="calc-check" data-annual="5000" aria-label="Cuento ERP / CRM"></td><td>ERP / CRM</td><td>SAP, Salesforce</td><td>Odoo, ERPNext, SuiteCRM</td><td class="saving">Miles/año</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="alt-note">* Un desarrollador que reemplaza toda su suite Adobe + Office + Windows por equivalentes open source puede ahorrar <strong>más de $1,000 USD al año</strong>, según los planes que use (precios de lista aproximados).</p>
+
+          <div class="savings-calc" id="savingsCalc">
+            <div class="savings-calc-text">
+              <p class="savings-calc-label">Calculadora de ahorro</p>
+              <p class="savings-calc-hint" id="savingsHint">Marca arriba las herramientas comerciales que usas hoy y mira cuánto ahorrarías al año migrando a sus alternativas open source.</p>
+            </div>
+            <div class="savings-calc-amount">
+              <span id="savingsTotal">$0</span><span class="savings-calc-period">USD / año</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GALERÍA ============ -->
+      <section id="galeria">
+        <div class="section-head reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="white" stroke-width="2"/><path d="M3 15l5-5 4 4 3-3 6 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.6" fill="white"/></svg>
+          </div>
+          <h2>Galería del ecosistema</h2>
+        </div>
+        <p class="section-intro reveal">Cinco espacios listos para tus propias fotos: capturas de terminal, comunidades, conferencias o herramientas en acción.</p>
+
+        <div class="gallery-grid reveal">
+          <figure class="gallery-item gi-1 has-illustration"><svg class="figure-illustration" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#1c1c1c"/>
+<rect x="24" y="24" width="352" height="252" rx="14" fill="#141414"/>
+<circle cx="50" cy="50" r="5" fill="#4A4A4A"/><circle cx="66" cy="50" r="5" fill="#4A4A4A"/><circle cx="82" cy="50" r="5" fill="#C8F135"/>
+<g font-family="monospace" font-size="13" fill="#C8F135">
+<text x="46" y="90">$ git clone repo.git</text>
+<text x="46" y="112" fill="#FFFFFF" opacity="0.7">$ git checkout -b feature</text>
+<text x="46" y="134" fill="#FFFFFF" opacity="0.7">$ git commit -m "aporte"</text>
+<text x="46" y="156">$ git push origin feature</text>
+</g>
+<path d="M46 190 V250 M46 210 h40 M46 230 h70" stroke="#FFFFFF" stroke-width="2.4" fill="none" opacity="0.4" stroke-linecap="round"/>
+<circle cx="46" cy="190" r="5" fill="#C8F135"/><circle cx="86" cy="210" r="5" fill="#FFFFFF" opacity="0.7"/><circle cx="116" cy="230" r="5" fill="#C8F135"/>
+</svg><figcaption>Sesión de pair programming sobre un proyecto open source</figcaption></figure>
+          <figure class="gallery-item gi-2 has-illustration"><svg class="figure-illustration" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#F9F9F7"/>
+<circle cx="200" cy="150" r="90" fill="none" stroke="#0A0A0A" stroke-width="1" opacity="0.12"/>
+<g stroke="#0A0A0A" stroke-width="1.6" opacity="0.35">
+  <path d="M90 120 L200 150 L300 90"/>
+  <path d="M90 120 L140 220"/>
+  <path d="M200 150 L140 220"/>
+  <path d="M200 150 L280 210"/>
+  <path d="M300 90 L280 210"/>
+  <path d="M140 220 L280 210"/>
+</g>
+<circle cx="90" cy="120" r="12" fill="#C8F135"/>
+<circle cx="200" cy="150" r="16" fill="#0A0A0A"/>
+<circle cx="300" cy="90" r="11" fill="#C8F135"/>
+<circle cx="140" cy="220" r="10" fill="#0A0A0A" opacity="0.6"/>
+<circle cx="280" cy="210" r="13" fill="#C8F135"/>
+</svg><figcaption>Red de contribuidores distribuida por el mundo</figcaption></figure>
+          <figure class="gallery-item gi-3 has-illustration"><svg class="figure-illustration" viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#FFFFFF"/><rect x="20" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="20" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="20" y="53" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="20" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="20" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="20" y="110" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="20" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="20" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="39" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="39" y="34" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="39" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="39" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="39" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="39" y="110" width="15" height="15" rx="3" fill="#C8F135"/><rect x="39" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="39" y="148" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="58" y="15" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="58" y="34" width="15" height="15" rx="3" fill="#C8F135"/><rect x="58" y="53" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="58" y="72" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="58" y="91" width="15" height="15" rx="3" fill="#C8F135"/><rect x="58" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="58" y="129" width="15" height="15" rx="3" fill="#C8F135"/><rect x="58" y="148" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="77" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="77" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="77" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="77" y="72" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="77" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="77" y="110" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="77" y="129" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="77" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="96" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="96" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="96" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="96" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="96" y="91" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="96" y="110" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="96" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="96" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="115" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="115" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="115" y="53" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="115" y="72" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="115" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="115" y="110" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="115" y="129" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="115" y="148" width="15" height="15" rx="3" fill="#C8F135"/><rect x="134" y="15" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="134" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="134" y="53" width="15" height="15" rx="3" fill="#C8F135"/><rect x="134" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="134" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="134" y="110" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="134" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="134" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="153" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="153" y="34" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="153" y="53" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="153" y="72" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="153" y="91" width="15" height="15" rx="3" fill="#C8F135"/><rect x="153" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="153" y="129" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="153" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="172" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="172" y="34" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="172" y="53" width="15" height="15" rx="3" fill="#C8F135"/><rect x="172" y="72" width="15" height="15" rx="3" fill="#C8F135"/><rect x="172" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="172" y="110" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="172" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="172" y="148" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="191" y="15" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="191" y="34" width="15" height="15" rx="3" fill="#C8F135"/><rect x="191" y="53" width="15" height="15" rx="3" fill="#C8F135"/><rect x="191" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="191" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="191" y="110" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="191" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="191" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="210" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="210" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="210" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="210" y="72" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="210" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="210" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="210" y="129" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="210" y="148" width="15" height="15" rx="3" fill="#C8F135"/><rect x="229" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="229" y="34" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="229" y="53" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="229" y="72" width="15" height="15" rx="3" fill="#C8F135"/><rect x="229" y="91" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="229" y="110" width="15" height="15" rx="3" fill="#C8F135"/><rect x="229" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="229" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="248" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="248" y="34" width="15" height="15" rx="3" fill="#C8F135"/><rect x="248" y="53" width="15" height="15" rx="3" fill="#C8F135"/><rect x="248" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="248" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="248" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="248" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="248" y="148" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="267" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="267" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="267" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="267" y="72" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="267" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="267" y="110" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="267" y="129" width="15" height="15" rx="3" fill="#C8F135"/><rect x="267" y="148" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="286" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="286" y="34" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="286" y="53" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="286" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="286" y="91" width="15" height="15" rx="3" fill="#C8F135"/><rect x="286" y="110" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="286" y="129" width="15" height="15" rx="3" fill="#C8F135"/><rect x="286" y="148" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="305" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="305" y="34" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="305" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="305" y="72" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="305" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="305" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="305" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="305" y="148" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="324" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="324" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="324" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="324" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="324" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="324" y="110" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="324" y="129" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="324" y="148" width="15" height="15" rx="3" fill="#C8F135"/><rect x="343" y="15" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="343" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="343" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="343" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="343" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="343" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="343" y="129" width="15" height="15" rx="3" fill="#C8F135"/><rect x="343" y="148" width="15" height="15" rx="3" fill="#C8F135"/><rect x="362" y="15" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="362" y="34" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="362" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="362" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="362" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="362" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="362" y="129" width="15" height="15" rx="3" fill="#C8F135"/><rect x="362" y="148" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="381" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="381" y="34" width="15" height="15" rx="3" fill="#C8F135"/><rect x="381" y="53" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="381" y="72" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="381" y="91" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="381" y="110" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="381" y="129" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="381" y="148" width="15" height="15" rx="3" fill="#C8F135"/><rect x="400" y="15" width="15" height="15" rx="3" fill="#C8F135"/><rect x="400" y="34" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="400" y="53" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="400" y="72" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="400" y="91" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="400" y="110" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="400" y="129" width="15" height="15" rx="3" fill="#e9e9e5"/><rect x="400" y="148" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="419" y="15" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="419" y="34" width="15" height="15" rx="3" fill="#f2f2ef"/><rect x="419" y="53" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="419" y="72" width="15" height="15" rx="3" fill="#C8F135"/><rect x="419" y="91" width="15" height="15" rx="3" fill="#C8F135"/><rect x="419" y="110" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="419" y="129" width="15" height="15" rx="3" fill="#e3f7a8"/><rect x="419" y="148" width="15" height="15" rx="3" fill="#e3f7a8"/></svg><figcaption>Mapa de actividad: commits de la comunidad durante el año</figcaption></figure>
+          <figure class="gallery-item gi-4 has-illustration"><svg class="figure-illustration" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#0A0A0A"/>
+<rect x="70" y="60" width="260" height="34" rx="6" fill="#FFFFFF" opacity="0.9"/>
+<rect x="90" y="104" width="220" height="34" rx="6" fill="#FFFFFF" opacity="0.75"/>
+<rect x="110" y="148" width="180" height="34" rx="6" fill="#C8F135"/>
+<path d="M130 160h140M130 172h100" stroke="#0A0A0A" stroke-width="2.2" opacity="0.55" stroke-linecap="round"/>
+<path d="M90 116h180M90 128h130" stroke="#0A0A0A" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+<path d="M70 72h220M70 84h150" stroke="#0A0A0A" stroke-width="2" opacity="0.25" stroke-linecap="round"/>
+</svg><figcaption>Documentación colaborativa, abierta a todos</figcaption></figure>
+          <figure class="gallery-item gi-5 has-illustration"><svg class="figure-illustration" viewBox="0 0 800 220" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#0A0A0A"/>
+<rect x="0" y="0" width="800" height="90" fill="#151515"/>
+<rect x="330" y="20" width="140" height="55" rx="6" fill="#C8F135" opacity="0.9"/>
+<path d="M360 35h80M360 47h60M360 59h70" stroke="#0A0A0A" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+<circle cx="20" cy="130" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="50" cy="130" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="80" cy="130" r="8" fill="#3a3a3a" opacity="0.9"/><circle cx="110" cy="130" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="140" cy="130" r="8" fill="#3a3a3a" opacity="0.9"/><circle cx="170" cy="130" r="8" fill="#C8F135" opacity="0.9"/><circle cx="200" cy="130" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="230" cy="130" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="260" cy="130" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="290" cy="130" r="8" fill="#C8F135" opacity="0.9"/><circle cx="320" cy="130" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="350" cy="130" r="8" fill="#3a3a3a" opacity="0.9"/><circle cx="30" cy="158" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="60" cy="158" r="8" fill="#3a3a3a" opacity="0.9"/><circle cx="90" cy="158" r="8" fill="#C8F135" opacity="0.9"/><circle cx="120" cy="158" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="150" cy="158" r="8" fill="#C8F135" opacity="0.9"/><circle cx="180" cy="158" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="210" cy="158" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="240" cy="158" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="270" cy="158" r="8" fill="#C8F135" opacity="0.9"/><circle cx="300" cy="158" r="8" fill="#3a3a3a" opacity="0.9"/><circle cx="330" cy="158" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="360" cy="158" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="20" cy="186" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="50" cy="186" r="8" fill="#3a3a3a" opacity="0.9"/><circle cx="80" cy="186" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="110" cy="186" r="8" fill="#C8F135" opacity="0.9"/><circle cx="140" cy="186" r="8" fill="#FFFFFF" opacity="0.9"/><circle cx="170" cy="186" r="8" fill="#C8F135" opacity="0.9"/><circle cx="200" cy="186" r="8" fill="#C8F135" opacity="0.9"/><circle cx="230" cy="186" r="8" fill="#3a3a3a" opacity="0.9"/><circle cx="260" cy="186" r="8" fill="#C8F135" opacity="0.9"/><circle cx="290" cy="186" r="8" fill="#C8F135" opacity="0.9"/><circle cx="320" cy="186" r="8" fill="#C8F135" opacity="0.9"/><circle cx="350" cy="186" r="8" fill="#FFFFFF" opacity="0.9"/>
+</svg><figcaption>Meetup universitario de software libre</figcaption></figure>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="../index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/comunidad.js"></script>
+
+</body>
+</html>

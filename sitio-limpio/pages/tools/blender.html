@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blender · Open Source</title>
+<meta name="description" content="Modelado 3D, animación, composición y edición de video. Usado en películas y videojuegos profesionales.">
+<link rel="icon" type="image/svg+xml" href="../../img/favicon.svg">
+<link rel="alternate icon" href="../../img/favicon.ico">
+<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="../../index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="../ecosistema.html">Visión general</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../que-es.html">¿Qué es?</a></li>
+              <li><a class="dropdown-item" href="../historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="../organizaciones.html">Organizaciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="../herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item" href="../ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item active" href="../edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="../juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="../utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="../desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../comunidad.html#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="../comunidad.html#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../comunidad.html#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ FICHA: Blender ============ -->
+  <main>
+    <div class="container">
+
+      <p class="tool-breadcrumb reveal">
+        <a href="../../index.html">Inicio</a><span class="sep">/</span><a href="../edicion.html">Edición</a><span class="sep">/</span>Blender
+      </p>
+
+      <section class="tool-hero reveal">
+        <div class="tool-hero-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#E87D0D"><path d="M12.51 13.214c.046-.8.438-1.506 1.03-2.006a3.424 3.424 0 0 1 2.212-.79c.85 0 1.631.3 2.211.79.592.5.983 1.206 1.028 2.005.045.823-.285 1.586-.865 2.153a3.389 3.389 0 0 1-2.374.938 3.393 3.393 0 0 1-2.376-.938c-.58-.567-.91-1.33-.865-2.152M7.35 14.831c.006.314.106.922.256 1.398a7.372 7.372 0 0 0 1.593 2.757 8.227 8.227 0 0 0 2.787 2.001 8.947 8.947 0 0 0 3.66.76 8.964 8.964 0 0 0 3.657-.772 8.285 8.285 0 0 0 2.785-2.01 7.428 7.428 0 0 0 1.592-2.762 6.964 6.964 0 0 0 .25-3.074 7.123 7.123 0 0 0-1.016-2.779 7.764 7.764 0 0 0-1.852-2.043h.002L13.566 2.55l-.02-.015c-.492-.378-1.319-.376-1.86.002-.547.382-.609 1.015-.123 1.415l-.001.001 3.126 2.543-9.53.01h-.013c-.788.001-1.545.518-1.695 1.172-.154.665.38 1.217 1.2 1.22V8.9l4.83-.01-8.62 6.617-.034.025c-.813.622-1.075 1.658-.563 2.313.52.667 1.625.668 2.447.004L7.414 14s-.069.52-.063.831zm12.09 1.741c-.97.988-2.326 1.548-3.795 1.55-1.47.004-2.827-.552-3.797-1.538a4.51 4.51 0 0 1-1.036-1.622 4.282 4.282 0 0 1 .282-3.519 4.702 4.702 0 0 1 1.153-1.371c.942-.768 2.141-1.183 3.396-1.185 1.256-.002 2.455.41 3.398 1.175.48.391.87.854 1.152 1.367a4.28 4.28 0 0 1 .522 1.706 4.236 4.236 0 0 1-.239 1.811 4.54 4.54 0 0 1-1.035 1.626"/></svg></div>
+        <div class="tool-hero-body">
+          <span class="tool-hero-tag">vs Cinema 4D</span>
+          <h1>Blender</h1>
+          <p class="tool-hero-desc">Modelado 3D, animación, composición y edición de video. Usado en películas y videojuegos profesionales.</p>
+          <div class="tool-hero-actions">
+            <a href="https://www.blender.org" class="btn-primary-os" target="_blank" rel="noopener">Sitio oficial ↗</a>
+            <a href="../edicion.html" class="btn-ghost-os">← Volver a Edición</a>
+          </div>
+        </div>
+      </section>
+      
+        <p class="tool-compare-note">En esta guía se posiciona como la alternativa libre a <strong>Cinema 4D</strong>.</p>
+
+      <section class="tool-section reveal">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.6 10.8c.4.3.6.8.6 1.3V16h6v-.9c0-.5.2-1 .6-1.3A6 6 0 0012 3z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>¿Para qué sirve?</h2>
+        </div>
+        <p class="section-intro reveal">Suite completa de creación 3D: modelado, animación, simulación, renderizado, composición y edición de video. Se usa en estudios de animación y videojuegos profesionales de todo el mundo, totalmente gratis.</p>
+      </section>
+
+      <section class="tool-section reveal">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="white" stroke-width="1.8"/><path d="M3 14.5l5-4.5 4 3.5 3-2.5 6 5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7.5" r="1.4" fill="currentColor"/></svg></div>
+          <h2>Capturas</h2>
+        </div>
+        <p class="section-intro reveal">Imágenes ilustrativas de Blender; no son capturas reales del programa.</p>
+        <div class="shot-grid reveal">
+          <!-- CAPTURA 1 de Blender: guardá la imagen como img/capturas/blender-1.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/blender-1.jpg" alt="Captura de Blender" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><img src="../../img/capturas/blender-1.jpg" alt="Ilustración de Blender" class="shot-img" loading="lazy"></div>
+          <!-- CAPTURA 2 de Blender: guardá la imagen como img/capturas/blender-2.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/blender-2.jpg" alt="Captura de Blender" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><img src="../../img/capturas/blender-2.jpg" alt="Ilustración de Blender" class="shot-img" loading="lazy"></div>
+          <!-- CAPTURA 3 de Blender: guardá la imagen como img/capturas/blender-3.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/blender-3.jpg" alt="Captura de Blender" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><img src="../../img/capturas/blender-3.jpg" alt="Ilustración de Blender" class="shot-img" loading="lazy"></div>
+        </div>
+      </section>
+
+      <section class="tool-section reveal" style="margin-bottom: 60px;">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10 14L21 3M21 3h-6M21 3v6M19 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>También te puede interesar</h2>
+        </div>
+        <a href="obs-studio.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#302E31"><path d="M12,24C5.383,24,0,18.617,0,12S5.383,0,12,0s12,5.383,12,12S18.617,24,12,24z M12,1.109 C5.995,1.109,1.11,5.995,1.11,12C1.11,18.005,5.995,22.89,12,22.89S22.89,18.005,22.89,12C22.89,5.995,18.005,1.109,12,1.109z M6.182,5.99c0.352-1.698,1.503-3.229,3.05-3.996c-0.269,0.273-0.595,0.483-0.844,0.78c-1.02,1.1-1.48,2.692-1.199,4.156 c0.355,2.235,2.455,4.06,4.732,4.028c1.765,0.079,3.485-0.937,4.348-2.468c1.848,0.063,3.645,1.017,4.7,2.548 c0.54,0.799,0.962,1.736,0.991,2.711c-0.342-1.295-1.202-2.446-2.375-3.095c-1.135-0.639-2.529-0.802-3.772-0.425 c-1.56,0.448-2.849,1.723-3.293,3.293c-0.377,1.25-0.216,2.628,0.377,3.772c-0.825,1.429-2.315,2.449-3.932,2.756 c-1.244,0.261-2.551,0.059-3.709-0.464c1.036,0.302,2.161,0.355,3.191-0.011c1.381-0.457,2.522-1.567,3.024-2.935 c0.556-1.49,0.345-3.261-0.591-4.54c-0.7-1.007-1.803-1.717-3.002-1.969c-0.38-0.068-0.764-0.098-1.148-0.134 c-0.611-1.231-0.834-2.66-0.528-3.996L6.182,5.99z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>OBS Studio</h4>
+              <p>Grabación y streaming en vivo. Uno de los favoritos de streamers y creadores de contenido.</p>
+              <span class="tc-badge tc-blue">vs Camtasia</span>
+            </div>
+          </div>
+        </a>
+        <a href="openshot.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6.5" width="18" height="12" rx="1.6"/><path d="M3 10h18M7 6.5V10M12 6.5V10M17 6.5V10" /><path d="M10.3 13.2l4 2-4 2z" fill="currentColor" stroke="none"/></svg></div>
+            <div class="tool-card-body">
+              <h4>OpenShot</h4>
+              <p>Editor intuitivo para principiantes. Arrastra, suelta y exporta sin curva de aprendizaje.</p>
+              <span class="tc-badge tc-green">Principiantes</span>
+            </div>
+          </div>
+        </a>
+        <a href="audacity.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#0000CC"><path d="M12 2.145c-2.487 0-4.755.776-6.428 2.08-1.673 1.303-2.76 3.169-2.76 5.244v.75C1.153 11.06 0 13.268 0 15.856c0 3.312 1.884 6 4.312 6V9.468c0-1.554.805-2.984 2.186-4.06C7.879 4.331 9.829 3.643 12 3.643c2.17 0 4.12.688 5.502 1.764 1.38 1.077 2.186 2.507 2.186 4.06v12.387c2.428 0 4.312-2.687 4.312-6 0-2.587-1.152-4.795-2.813-5.636v-.75c0-2.075-1.086-3.94-2.76-5.244-1.672-1.304-3.94-2.08-6.427-2.08zm0 6.153l-1.125 8.683L9.75 9.105l-.562 6.75-.376-.75-.375-4.5-.187 4.5-.563 1.313-.374-4.5-.376 3.562-.562-.937v2.625l-.563-2.11v-4.64a1.432 1.432 0 0 0-.937-.375v11.812c.375 0 .75-.187.937-.562v-3.375l.188.187.563 1.875.187-2.25.563 2.813v-3.562l.374.937.563 2.625v-3.562l.375.374.563 3.188.562-4.313 1.24 4.86.072-2.985.375-1.124.376 4.687 1.124-4.687.375 3.937.938-4.125.938 4.5.187-3.375.562-1.125.188 4.313.938-4.125.562 1.875.188-1.688.374.75v3.375c.188.375.563.562.938.562V10.043c-.375 0-.75.188-.938.375v4.813l-.374 1-.188-3.188-.375 2.437-.375-.75-.188-2.625-.937 3.563-.188-.75L15 9.293l-.562 4.875-.376 1.5-.75-5.062-.75 4.312-.375 1.125Z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>Audacity</h4>
+              <p>Grabación y edición de audio multipista. Uno de los editores open source favoritos de podcasters y locutores.</p>
+              <span class="tc-badge tc-blue">vs Adobe Audition</span>
+            </div>
+          </div>
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="../../index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

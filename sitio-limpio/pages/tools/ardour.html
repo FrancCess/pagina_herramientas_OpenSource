@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ardour · Open Source</title>
+<meta name="description" content="DAW profesional de nivel estudio. Grabación multipista, mezcla y masterización.">
+<link rel="icon" type="image/svg+xml" href="../../img/favicon.svg">
+<link rel="alternate icon" href="../../img/favicon.ico">
+<link rel="apple-touch-icon" href="../../img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="../../index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="../ecosistema.html">Visión general</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../que-es.html">¿Qué es?</a></li>
+              <li><a class="dropdown-item" href="../historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="../organizaciones.html">Organizaciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="../herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item" href="../ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item active" href="../edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="../juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="../utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="../desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="../comunidad.html#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="../comunidad.html#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../comunidad.html#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ FICHA: Ardour ============ -->
+  <main>
+    <div class="container">
+
+      <p class="tool-breadcrumb reveal">
+        <a href="../../index.html">Inicio</a><span class="sep">/</span><a href="../edicion.html">Edición</a><span class="sep">/</span>Ardour
+      </p>
+
+      <section class="tool-hero reveal">
+        <div class="tool-hero-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#C61C3E"><path d="M12 1.606L0 22.394c1.45 0 .832-.885 1.565-.93.703 0 .559.44 1.044.44.846 0 .273-2.82 1.043-2.82.665 0 .48 2.038 1.044 2.038.288 0 .521-.811.521-1.81v-.945c0-1.304.234-2.364.522-2.364.288 0 .522 1.066.522 2.005 0 1.178.233 2.43.522 2.43.288 0 .521-1.263.521-2.805v-.44c0-1.69.234-3.065.522-3.065.288 0 .522 1.369.522 2.967 0 1.661.233 3.098.522 3.098.288 0 .521-1.437.521-3.18 0-1.737.234-3.146.522-3.146.288 0 .522 1.424.522 3.277 0 1.786.233 3.147.522 3.147.288 0 .521-1.367.521-2.87 0-1.386.234-2.657.522-2.657.288 0 .522 1.271.522 2.837v.472c0 1.415.233 2.56.521 2.56.289 0 .522-1.152.522-2.299 0-.973.234-1.989.522-1.989.288 0 .522 1.01.522 2.25v.57c0 1.058.233 1.908.521 1.908.289 0 .522-.84.522-1.614 0-.589.234-1.304.522-1.304.288 0 .522.709.522 1.581v.538c0 .696.233 1.272.521 1.272.595 0 .45-1.728 1.044-1.728.288 0 .522.43.522.962v.456c0 .385.233.685.521.685.59 0 .462-.782 1.044-.782.76 0 .197 1.076 1.043 1.076.512 0 .426-.18 1.044-.18.563 0 .493.359 1.565.359z"/></svg></div>
+        <div class="tool-hero-body">
+          <span class="tool-hero-tag">vs Pro Tools</span>
+          <h1>Ardour</h1>
+          <p class="tool-hero-desc">DAW profesional de nivel estudio. Grabación multipista, mezcla y masterización.</p>
+          <div class="tool-hero-actions">
+            <a href="https://ardour.org" class="btn-primary-os" target="_blank" rel="noopener">Sitio oficial ↗</a>
+            <a href="../edicion.html" class="btn-ghost-os">← Volver a Edición</a>
+          </div>
+        </div>
+      </section>
+      
+        <p class="tool-compare-note">En esta guía se posiciona como la alternativa libre a <strong>Pro Tools</strong>.</p>
+
+      <section class="tool-section reveal">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.6 10.8c.4.3.6.8.6 1.3V16h6v-.9c0-.5.2-1 .6-1.3A6 6 0 0012 3z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>¿Para qué sirve?</h2>
+        </div>
+        <p class="section-intro reveal">DAW de nivel estudio para grabación, mezcla y masterización multipista. Lo usan estudios de grabación profesionales como alternativa real a Pro Tools.</p>
+      </section>
+
+      <section class="tool-section reveal">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="white" stroke-width="1.8"/><path d="M3 14.5l5-4.5 4 3.5 3-2.5 6 5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7.5" r="1.4" fill="currentColor"/></svg></div>
+          <h2>Capturas</h2>
+        </div>
+        <p class="section-intro reveal">Imágenes ilustrativas de Ardour; no son capturas reales del programa.</p>
+        <div class="shot-grid reveal">
+          <!-- CAPTURA 1 de Ardour: guardá la imagen como img/capturas/ardour-1.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/ardour-1.jpg" alt="Captura de Ardour" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><img src="../../img/capturas/ardour-1.jpg" alt="Ilustración de Ardour" class="shot-img" loading="lazy"></div>
+          <!-- CAPTURA 2 de Ardour: guardá la imagen como img/capturas/ardour-2.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/ardour-2.jpg" alt="Captura de Ardour" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><img src="../../img/capturas/ardour-2.jpg" alt="Ilustración de Ardour" class="shot-img" loading="lazy"></div>
+          <!-- CAPTURA 3 de Ardour: guardá la imagen como img/capturas/ardour-3.jpg (o .png, ajustando la extensión abajo) y reemplazá el <div class="shot-item">...</div> de abajo por:
+     <div class="shot-item"><img src="../../img/capturas/ardour-3.jpg" alt="Captura de Ardour" class="shot-img" loading="lazy"></div> -->
+          <div class="shot-item"><img src="../../img/capturas/ardour-3.jpg" alt="Ilustración de Ardour" class="shot-img" loading="lazy"></div>
+        </div>
+      </section>
+
+      <section class="tool-section reveal" style="margin-bottom: 60px;">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M10 14L21 3M21 3h-6M21 3v6M19 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h2>También te puede interesar</h2>
+        </div>
+        <a href="gimp.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#8C8073"><path d="M15.496 8.608a2.175 2.385 0 0 0-2.175 2.384 2.175 2.385 0 0 0 2.175 2.385 2.175 2.385 0 0 0 2.175-2.385 2.175 2.385 0 0 0-2.175-2.384zm0 .15a.934.934 0 0 1 .933.935.934.934 0 0 1-.933.934.934.934 0 0 1-.934-.934.934.934 0 0 1 .934-.934zm4.903 9.433a.314.314 0 0 0-.094.014c-.278.08-.642.735-.563 1.013.079.278.356.152.524.245.149.083.196.33.4.329-.033.446.125.903.398 1.231.464.564 1.173.576 1.627.68.453.103.789.38.955.683h-.01c.14.253.413-.965.313-1.81-.199-1.692-1.827-2.294-2.657-1.856-.095-.218-.349-.112-.507-.2-.147-.082-.195-.323-.39-.329zM2.01 8.207a2.938 2.279 78.561 0 0-.296.036 2.938 2.279 78.561 0 0-1.637 3.343 2.938 2.279 78.561 0 0 2.824 2.412 2.938 2.279 78.561 0 0 1.637-3.343A2.938 2.279 78.561 0 0 2.01 8.207zm.02.182a1.24 1.24 89.982 0 1 1.24 1.24 1.24 1.24 89.982 0 1-1.24 1.241 1.24 1.24 89.982 0 1-1.24-1.24 1.24 1.24 89.982 0 1 1.24-1.24zm7.296.619a1.61 1.957 0 0 0-1.61 1.957 1.61 1.957 0 0 0 1.61 1.957 1.61 1.957 0 0 0 1.61-1.957 1.61 1.957 0 0 0-1.61-1.957zm.01.142a.734.734 0 0 1 .733.733.734.734 0 0 1-.733.734.734.734 0 0 1-.734-.734.734.734 0 0 1 .734-.733zm13.785-7.57c-.082.01-.178.056-.278.184-2.255 3.385-5.54 4.902-7.936 5.521a3.513 3.586 0 0 1 3.25 3.576 3.513 3.586 0 0 1-3.513 3.586 3.513 3.586 0 0 1-3.375-2.595 2.676 2.998 0 0 1-2.52 2 2.676 2.998 0 0 1-2.676-2.998 2.676 2.998 0 0 1 2.675-2.999 2.676 2.998 0 0 1 2.517 2.037 3.513 3.586 0 0 1 1.878-2.27c-1.887.246-2.89-.025-4.335-.649-1.024-.56-1.722-1.173-2.48-2.359-.036-.055-.11-.086-.16-.025-.18.241-.97 5.723-.98 6.227-.033 1.632-.706 3.593-2.73 3.661 1.864 3.799 5.919 5.465 10.586 5.397 1.404.01 3.329-.332 5.171-1.243a213.84 213.84 0 0 1-1.568-.996c-1.347.788-2.935 1.09-4.674 1.019-2.217-.09-1.847-.732-1.36-.667 3.574.506 5.82-.624 7.315-2.547a34.596 34.596 0 0 1-.556-.377c-.164-.114.032-.291.385-.304h.04c.205-.002.458.056.722.206.757.433.783.965.535 1.081-.08.037-.263-.048-.439-.151-.255.329-.53.622-.818.887h.01c.668.29 1.568.684 2.005.89a9.634 9.634 0 0 0 3.017-3.574c2.18-4.449.652-12.176.614-12.29-.039-.112-.15-.211-.242-.226h-.076z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>GIMP</h4>
+              <p>Retoque fotográfico profesional. Capas, filtros, scripting. La alternativa directa a Photoshop.</p>
+              <span class="tc-badge tc-blue">vs Photoshop</span>
+            </div>
+          </div>
+        </a>
+        <a href="inkscape.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#000000"><path d="M7.666 14.871c.237.147 3.818.875 4.693 1.02.303.064.088.376-.33.587-.943.251-5.517-1.607-4.363-1.607zm5.647-13.264l3.505 3.56c.333.34.328.998.142 1.187l-1.74-1.392-.342 2.061-1.455-.767-2.328 1.47-.771-3.1L9.073 6.79H7.16c-.78 0-.871-.99-.163-1.698 1.237-1.335 2.657-2.696 3.429-3.485.776-.793 2.127-.77 2.887 0zM9.786.97l-8.86 9.066c-2.993 3.707 2.038 3.276 4.194 4.343.774.791-2.965 1.375-2.191 2.166.773.791 4.678 1.524 5.453 2.314.773.791-1.584 1.63-.81 2.42.773.792 2.563.042 2.898 1.868.238 1.304 3.224.56 4.684-.508.774-.791-1.48-.717-.706-1.508 1.923-1.967 3.715-.714 4.373-2.686.325-.974-2.832-1.501-2.057-2.292 2.226-1.3 9.919-2.146 6.268-5.796L13.85.97c-1.123-1.078-2.998-1.09-4.063 0zm10.177 17.475c0 .45 3.314.745 3.314-.106-.472-1.366-2.922-1.274-3.314.106zm-14.928 2.39c.784.679 1.997-.169 2.36-1.116-.76-1.01-3.607.037-2.36 1.116zm14.512-1.466c-1.011.908.114 1.828 1.111 1.242.222-.225-.006-1.016-1.11-1.242Z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>Inkscape</h4>
+              <p>Diseño vectorial SVG de nivel profesional. Logos, ilustraciones e iconografía sin perder calidad.</p>
+              <span class="tc-badge tc-blue">vs Illustrator</span>
+            </div>
+          </div>
+        </a>
+        <a href="krita.html" class="related-tool-link">
+          <div class="tool-card">
+            <div class="tool-card-icon has-icon"><svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="#3BABFF"><path d="M.652.76a.625.625 0 00-.5.246c-.352.448-.035.898.362 1.262.206.189 1.77 1.794 3.428 3.527a11.054 11.054 0 011.815-1.983C3.667 2.515 1.694 1.266 1.461 1.1 1.201.914.917.762.652.76zm5.105 3.052c1.848 1.148 3.786 2.332 4.693 2.84 1.469.821 3.758 2.684 4.092 4.434.535.466 2.182 1.916 2.596 2.413.698-.211 1.518.133 2.06 1.12.866 1.583.227 3.747-1.968 4.988a5.42 5.42 0 01-.296.267l.296-.267c1.14-1.468-.714-2.44-1.175-3.864a2.06 2.06 0 01-.11-.78c-.533-.282-2.11-1.452-2.795-1.965-1.801.16-4.207-1.773-5.35-3.08-.7-.802-2.32-2.517-3.858-4.123a11.052 11.052 0 00-2.046 6.393A11.052 11.052 0 1012.948 1.136c-2.64.004-5.19.954-7.19 2.676zm8.71 7.552c-.515.126-.968.831-1.118 1.306-.038.115-.04.303.066.342.802.592 1.556 1.168 2.4 1.7.162-.393.746-.963 1.096-1.2zm-11.53 1.639c.812 1.898 5.798 7.17 12.06 2.695a2.07 2.07 0 00.114.715c.46 1.42 2.36 2.427 1.238 3.89-2.135 1.364-5 1.201-6.989.528-3.558-1.204-5.914-4.332-6.424-7.828zm13.782.7a.771.771 0 00-.065.049c-.004.003-.008.008-.011.008.003-.003.007-.008.01-.008.024-.015.044-.034.066-.048z"/></svg></div>
+            <div class="tool-card-body">
+              <h4>Krita</h4>
+              <p>Pintura digital e ilustración. Pinceles expresivos y flujo de trabajo para tabletas gráficas.</p>
+              <span class="tc-badge tc-blue">vs Procreate</span>
+            </div>
+          </div>
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="../../index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Qué es Open Source? · Open Source</title>
+<meta name="description" content="Qué significa código abierto, cómo funcionan las licencias (GPL, MIT, Apache) y por qué es la base de la tecnología actual.">
+<link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+<link rel="alternate icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="eco-progress" aria-hidden="true"><i></i></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="ecosistema.html">Visión general</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item active" href="que-es.html">¿Qué es?</a></li>
+              <li><a class="dropdown-item" href="historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="organizaciones.html">Organizaciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item" href="ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item" href="edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="comunidad.html#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="comunidad.html#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="comunidad.html#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="qe-main">
+    <header class="eco-hero qe-hero" data-hero>
+      <span class="eco-hero-spot" aria-hidden="true"></span>
+      <canvas class="qe-canvas" id="qeCanvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <p class="reveal" style="margin: 0 0 26px;"><a href="ecosistema.html" class="hub-link" style="text-decoration:none; color:rgba(255,255,255,.7);">&larr; Ecosistema</a></p>
+        <div class="eco-hero-grid">
+          <div>
+            <span class="eco-eyebrow">Ecosistema · 01 de 03</span>
+            <h1><span data-split>El código,</span> <em class="rot" data-rotate><span class="visually-hidden">a la vista de todos.</span><span aria-hidden="true" class="rot-i is-on">a la vista de todos.</span><span aria-hidden="true" class="rot-i">abierto para aprender.</span><span aria-hidden="true" class="rot-i">libre de mejorarse.</span><span aria-hidden="true" class="rot-i">hecho en comunidad.</span></em></h1>
+            <p class="eco-lead">Open Source es software cuyo código fuente se publica abierto para que cualquiera pueda leerlo, usarlo, modificarlo y redistribuirlo. Sigue el recorrido: de tu teléfono a las supercomputadoras, y de ahí a tu primer Pull Request.</p>
+            <div class="qe-cta">
+              <a class="qe-btn qe-btn-main" href="#dia" data-magnet>Empieza el recorrido <span>↓</span></a>
+              <a class="qe-btn qe-btn-ghost" href="#terminal" data-magnet>Pruébalo en una terminal</a>
+            </div>
+            <div class="eco-stats">
+              <div class="eco-stat"><b data-count="4">4</b><small>libertades esenciales del software libre</small></div>
+              <div class="eco-stat"><b data-count="1983" data-from="1900" data-plain>1983</b><small>nace el movimiento del software libre</small></div>
+              <div class="eco-stat"><b data-count="1998" data-from="1900" data-plain>1998</b><small>se acuña el término "Open Source"</small></div>
+            </div>
+          </div>
+          <div class="code-win" aria-hidden="true">
+            <div class="code-win-bar"><i></i><i></i><i></i><span>proyecto-abierto.js</span></div>
+<pre><span class="code-line" style="--i:0"><span class="c">// así se ve un proyecto abierto</span></span><span class="code-line" style="--i:1"><span class="k">const</span> proyecto = {</span><span class="code-line" style="--i:2">  codigo:    <span class="s">"visible para todos"</span>,</span><span class="code-line" style="--i:3">  leer:      <span class="n">true</span>,</span><span class="code-line" style="--i:4">  modificar: <span class="n">true</span>,</span><span class="code-line" style="--i:5">  compartir: <span class="n">true</span>,</span><span class="code-line" style="--i:6">  licencia:  <span class="s">"MIT | Apache | GPL"</span></span><span class="code-line" style="--i:7">};<span class="code-caret"></span></span></pre>
+          </div>
+        </div>
+      </div>
+      <a class="qe-cue" href="#dia" aria-label="Desplazarse al recorrido"><i></i>Desliza</a>
+    </header>
+
+    <div class="qe-marq" aria-hidden="true"><div class="qe-marq-band"><div class="qe-marq-track"><div class="qe-marq-group"><b>Leer</b><i>✦</i><b>Modificar</b><i>✦</i><b>Compartir</b><i>✦</i><b>Mejorar</b><i>✦</i><b>Aprender</b><i>✦</i><b>Colaborar</b><i>✦</i><b>Redistribuir</b><i>✦</i></div><div class="qe-marq-group"><b>Leer</b><i>✦</i><b>Modificar</b><i>✦</i><b>Compartir</b><i>✦</i><b>Mejorar</b><i>✦</i><b>Aprender</b><i>✦</i><b>Colaborar</b><i>✦</i><b>Redistribuir</b><i>✦</i></div></div></div></div>
+
+    <nav class="eco-spy" aria-label="En esta página" data-spy>
+      <span class="eco-spy-ind" aria-hidden="true"></span>
+      <a href="#que-es">Definición</a>
+      <a href="#dia">Un día</a>
+      <a href="#abierto-cerrado">Abierto vs. cerrado</a>
+      <a href="#libertades">Libertades</a>
+      <a href="#terminal">Pruébalo</a>
+      <a href="#mitos">Mitos</a>
+      <a href="#licencias">Licencias</a>
+      <a href="#comparativa">Comparativa</a>
+      <a href="#contribuir">Contribuir</a>
+    </nav>
+
+    <div class="container">
+      <section class="eco-sec qe-statement" id="que-es">
+        <span class="qe-bgword" aria-hidden="true" data-bgword>OPEN</span>
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" stroke="white" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="white"/></svg></div>
+          <h2>¿Qué es Open Source?</h2>
+        </div>
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-7">
+            <div class="qe-big" data-words>
+              <p><strong>Open Source</strong> (código abierto) describe software cuyo código fuente se publica de forma abierta: cualquier persona puede leerlo, usarlo, modificarlo y redistribuirlo. No se trata solo de que el programa sea gratuito, lo central es la <strong>transparencia del código</strong> y la libertad para intervenir en él.</p>
+              <p>Este modelo se sostiene en licencias específicas (GPL, MIT, Apache) que definen legalmente qué se puede hacer con ese código, y en comunidades globales que colaboran de forma distribuida sin pertenecer a una misma empresa ni país.</p>
+              <p>Hoy el Open Source es la base de <strong>gran parte de la infraestructura tecnológica global</strong>: el servidor que aloja esta página, el navegador con el que la lees, el sistema operativo de tu teléfono, todo tiene raíces en proyectos abiertos. Además, cualquiera puede participar.</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="qe-fig" data-fig>
+              <figure class="section-figure has-illustration">
+              <svg class="figure-illustration" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#0A0A0A"/>
+<g opacity="0.18" stroke="#FFFFFF" stroke-width="1">
+  <path d="M0 40h400M0 90h400M0 140h400M0 190h400M0 240h400"/>
+</g>
+<path d="M60 250 V120 Q60 90 90 90 H220" stroke="#C8F135" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M150 250 V170 Q150 140 180 140 H320" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.55" stroke-linecap="round"/>
+<path d="M240 250 V90" stroke="#C8F135" stroke-width="3" fill="none" opacity="0.85" stroke-linecap="round"/>
+<circle cx="60" cy="250" r="9" fill="#0A0A0A" stroke="#C8F135" stroke-width="3"/>
+<circle cx="150" cy="250" r="9" fill="#0A0A0A" stroke="#FFFFFF" stroke-width="3" opacity="0.7"/>
+<circle cx="240" cy="250" r="9" fill="#0A0A0A" stroke="#C8F135" stroke-width="3"/>
+<circle cx="220" cy="90" r="10" fill="#C8F135"/>
+<circle cx="320" cy="140" r="8" fill="#FFFFFF" opacity="0.6"/>
+<circle cx="240" cy="90" r="10" fill="#C8F135"/>
+<rect x="196" y="66" width="88" height="48" rx="8" fill="none" stroke="#C8F135" stroke-width="1.4" opacity="0.5"/>
+<path d="M330 60l14 14-14 14M346 74h-16" stroke="#C8F135" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+</svg>
+              <figcaption>Un proyecto, mil manos: así se construye el open source</figcaption>
+            </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="qe-day" id="dia" data-day aria-label="Un día con open source">
+      <div class="qe-day-intro">
+        <span class="eco-eyebrow">Un día con open source</span>
+        <h2>Ya lo usaste hoy. Solo que no lo veías.</h2>
+        <p>Recorre un día cualquiera y descubre cuánto código abierto hay detrás de lo que haces sin pensarlo.</p>
+      </div>
+      <div class="qe-day-pin" data-pin>
+        <div class="qe-sky" aria-hidden="true"></div>
+        <div class="qe-stars" aria-hidden="true"></div>
+        <span class="qe-orb qe-sun" aria-hidden="true"></span>
+        <span class="qe-orb qe-moon" aria-hidden="true"></span>
+        <div class="qe-day-head" aria-hidden="true">
+          <div class="qe-clock"><span data-clock>07:00</span><small>h</small></div>
+          <div class="qe-ticks"><span class="is-on">07</span><span>09</span><span>13</span><span>18</span><span>23</span></div>
+        </div>
+        <div class="qe-track" data-track>
+        <article class="qe-panel is-active" style="--pa:#2a1d4e;--pb:#e0865b;--rot:-1.6deg" data-time="07:00">
+          <div class="qe-panel-text">
+            <span class="qe-time" aria-hidden="true">07:00</span>
+            <h3><span class="visually-hidden">07:00 · </span>Suena la alarma… en un sistema abierto</h3>
+            <p>Tu teléfono arranca. Si es Android, corre sobre un núcleo Linux y sobre AOSP, el proyecto de código abierto de Google. Antes de tomar café, ya usaste open source.</p>
+            <ul class="qe-chips" aria-label="Proyectos abiertos en este momento del día"><li class="os">Linux</li><li class="os">AOSP / Android</li></ul>
+            <p class="qe-fact">Android es el sistema operativo móvil más usado del mundo.</p>
+            
+          </div>
+          <figure class="qe-slot">
+              <div class="qe-slot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 5l1.2-2h5.6L16 5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><b>Aquí va tu imagen</b><small>Sugerencia: un teléfono Android, o la mascota de Android.</small><code>que-es-1.jpg</code></div>
+              <img src="../img/ecosistema/que-es-1.jpg" alt="Ilustración: 07:00: alguien apaga la alarma de su teléfono" loading="lazy" onerror="this.style.display='none'">
+            </figure>
+        </article>
+        <article class="qe-panel" style="--pa:#1b4f8a;--pb:#7fb9e8;--rot:1.6deg" data-time="09:00">
+          <div class="qe-panel-text">
+            <span class="qe-time" aria-hidden="true">09:00</span>
+            <h3><span class="visually-hidden">09:00 · </span>Abres el navegador y el mundo carga</h3>
+            <p>Firefox es de código abierto; Chromium, el proyecto que da base a Chrome, Edge y Brave, también. Cada página que visitas pasa por motores de renderizado construidos en abierto.</p>
+            <ul class="qe-chips" aria-label="Proyectos abiertos en este momento del día"><li class="os">Firefox</li><li class="os">Chromium</li></ul>
+            <p class="qe-fact">Muchos navegadores modernos comparten un mismo motor abierto.</p>
+            
+          </div>
+          <figure class="qe-slot">
+              <div class="qe-slot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 5l1.2-2h5.6L16 5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><b>Aquí va tu imagen</b><small>Sugerencia: logos de Firefox y Chromium, o un navegador abierto.</small><code>que-es-2.jpg</code></div>
+              <img src="../img/ecosistema/que-es-2.jpg" alt="Ilustración: 09:00: una estudiante navega en la biblioteca" loading="lazy" onerror="this.style.display='none'">
+            </figure>
+        </article>
+        <article class="qe-panel" style="--pa:#0e6fb0;--pb:#5bc0eb;--rot:-1.4deg" data-time="13:00">
+          <div class="qe-panel-text">
+            <span class="qe-time" aria-hidden="true">13:00</span>
+            <h3><span class="visually-hidden">13:00 · </span>Detrás de cada web hay un servidor abierto</h3>
+            <p>Al pedir una página o abrir una app, la respuesta suele salir de servidores con Linux, servidores web como Apache o nginx y bases de datos como PostgreSQL. Internet funciona, en gran medida, con piezas abiertas.</p>
+            <ul class="qe-chips" aria-label="Proyectos abiertos en este momento del día"><li class="os">Linux</li><li class="os">nginx</li><li class="os">Apache</li><li class="os">PostgreSQL</li></ul>
+            <p class="qe-fact">Gran parte de la infraestructura de internet corre sobre software libre.</p>
+            
+          </div>
+          <figure class="qe-slot">
+              <div class="qe-slot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 5l1.2-2h5.6L16 5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><b>Aquí va tu imagen</b><small>Sugerencia: un centro de datos, racks de servidores.</small><code>que-es-3.jpg</code></div>
+              <img src="../img/ecosistema/que-es-3.jpg" alt="Ilustración: 13:00: un centro de datos lleno de servidores" loading="lazy" onerror="this.style.display='none'">
+            </figure>
+        </article>
+        <article class="qe-panel" style="--pa:#3b1f5e;--pb:#e0724a;--rot:1.4deg" data-time="18:00">
+          <div class="qe-panel-text">
+            <span class="qe-time" aria-hidden="true">18:00</span>
+            <h3><span class="visually-hidden">18:00 · </span>Las máquinas más potentes del planeta, también</h3>
+            <p>Desde 2017, las 500 supercomputadoras de la lista TOP500 corren Linux. Y la nube moderna se orquesta con herramientas abiertas como Kubernetes y se empaqueta con contenedores como Docker.</p>
+            <ul class="qe-chips" aria-label="Proyectos abiertos en este momento del día"><li class="os">Linux</li><li class="os">Kubernetes</li><li class="os">Docker</li></ul>
+            <p class="qe-fact">El 100 % de las supercomputadoras del TOP500 usa Linux.</p>
+            
+          </div>
+          <figure class="qe-slot">
+              <div class="qe-slot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 5l1.2-2h5.6L16 5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><b>Aquí va tu imagen</b><small>Sugerencia: una supercomputadora o un clúster de cómputo.</small><code>que-es-4.jpg</code></div>
+              <img src="../img/ecosistema/que-es-4.jpg" alt="Ilustración: 18:00: una supercomputadora y su equipo de científicos" loading="lazy" onerror="this.style.display='none'">
+            </figure>
+        </article>
+        <article class="qe-panel" style="--pa:#050b1d;--pb:#14284f;--rot:-1.6deg" data-time="23:00">
+          <div class="qe-panel-text">
+            <span class="qe-time" aria-hidden="true">23:00</span>
+            <h3><span class="visually-hidden">23:00 · </span>Y por la noche, alguien como tú manda un cambio</h3>
+            <p>En GitHub, millones de personas colaboran con Git, el sistema de control de versiones que Linus Torvalds creó en 2005. Corregir una errata o proponer una mejora puede ser tu primer paso.</p>
+            <ul class="qe-chips" aria-label="Proyectos abiertos en este momento del día"><li class="os">Git</li><li class="os">GitHub</li></ul>
+            <p class="qe-fact">Cualquiera puede abrir un Pull Request en un proyecto abierto.</p>
+            <a class="qe-link" href="comunidad.html#participar">Cómo dar tu primer paso →</a>
+          </div>
+          <figure class="qe-slot">
+              <div class="qe-slot-ph"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 5l1.2-2h5.6L16 5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><b>Aquí va tu imagen</b><small>Sugerencia: una pantalla con un repositorio o un Pull Request.</small><code>que-es-5.jpg</code></div>
+              <img src="../img/ecosistema/que-es-5.jpg" alt="Ilustración: 23:00: un estudiante programa de noche" loading="lazy" onerror="this.style.display='none'">
+            </figure>
+        </article>
+        </div>
+        <div class="qe-day-bar" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <div class="container qe-container">
+
+      <section class="eco-sec" id="abierto-cerrado">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="11" width="16" height="10" rx="2" stroke="white" stroke-width="2"/><path d="M8 11V8a4 4 0 017.5-2" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h2>Código cerrado vs. código abierto</h2>
+        </div>
+        <p class="section-intro reveal">Mueve el interruptor y mira qué cambia cuando el código de un programa se abre al mundo.</p>
+        <div class="oc-demo reveal" data-oc data-open="false">
+          <div class="oc-switch">
+            <span class="oc-lab oc-lab-closed">Cerrado</span>
+            <button type="button" class="oc-toggle" role="switch" aria-checked="false" aria-label="Abrir el código del programa"><i></i></button>
+            <span class="oc-lab oc-lab-open">Abierto</span>
+          </div>
+          <div class="oc-stage">
+            <div class="oc-app">
+              <div class="oc-app-bar"><i></i><i></i><i></i><span>mi-programa/main.py</span></div>
+              <div class="oc-code-wrap">
+<pre class="oc-code" aria-hidden="true"><span class="ln"><b>1</b><span class="c"># calcula el total del carrito</span></span><span class="ln"><b>2</b><span class="k">def</span> total(items):</span><span class="ln bug"><b>3</b>    <span class="k">return</span> sum(i.precio <span class="k">for</span> i <span class="k">in</span> items) <span class="c"># ← falta el IVA</span></span><span class="ln"><b>4</b></span><span class="ln"><b>5</b><span class="k">def</span> pagar(carrito):</span><span class="ln"><b>6</b>    <span class="k">return</span> cobrar(total(carrito.items))</span></pre>
+                <div class="oc-lock">
+                  <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="4" y="11" width="16" height="10" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <b>Código oculto</b>
+                  <span>Solo el fabricante puede verlo</span>
+                </div>
+              </div>
+            </div>
+            <div class="oc-side" aria-live="polite">
+              <div class="oc-card oc-card-closed"><div><b>Sin acceso</b><span>No puedes revisar qué hace el programa ni arreglar un error por tu cuenta.</span></div></div>
+              <div class="oc-card oc-card-open" style="--i:0"><span class="av">A</span><div><b>Ana encontró un error</b><span>Vio que en la línea 3 faltaba el IVA y lo reportó.</span></div></div>
+              <div class="oc-card oc-card-open" style="--i:1"><span class="av">L</span><div><b>Luis propuso la corrección</b><span>Abrió un Pull Request con el cambio de una línea.</span></div></div>
+              <div class="oc-card oc-card-open" style="--i:2"><span class="av">M</span><div><b>Marta lo tradujo</b><span>Ahora el programa también está en español.</span></div></div>
+            </div>
+          </div>
+          <div class="oc-metrics">
+            <div><small>¿Quién puede leerlo?</small><b data-closed="Solo el fabricante" data-open="Cualquier persona">Solo el fabricante</b></div>
+            <div><small>¿Quién puede corregirlo?</small><b data-closed="El mismo equipo" data-open="Toda la comunidad">El mismo equipo</b></div>
+            <div><small>¿Quién puede mejorarlo?</small><b data-closed="Quien tenga permiso" data-open="Quien proponga cambios">Quien tenga permiso</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="eco-sec" id="libertades">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7L12 16l-6.3 4.3 2.3-7-6-4.4h7.6L12 2z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+          <h2>Las cuatro libertades</h2>
+        </div>
+        <p class="section-intro reveal">La Free Software Foundation resume el software libre en cuatro libertades, numeradas desde cero. Elige una para ver qué significa en la práctica.</p>
+        <div class="eco-tabs reveal" data-tabs data-autoplay>
+          <div class="eco-tablist" role="tablist" aria-label="Las cuatro libertades del software libre">
+            <button class="eco-tab" role="tab" id="lib-tab-0" aria-controls="lib-panel-0" aria-selected="true" tabindex="0" type="button"><span class="n">0</span><span><strong>Ejecutarlo</strong><small>Con cualquier propósito</small></span><i class="tab-prog" aria-hidden="true"></i></button>
+            <button class="eco-tab" role="tab" id="lib-tab-1" aria-controls="lib-panel-1" aria-selected="false" tabindex="-1" type="button"><span class="n">1</span><span><strong>Estudiarlo y cambiarlo</strong><small>Requiere el código fuente</small></span><i class="tab-prog" aria-hidden="true"></i></button>
+            <button class="eco-tab" role="tab" id="lib-tab-2" aria-controls="lib-panel-2" aria-selected="false" tabindex="-1" type="button"><span class="n">2</span><span><strong>Redistribuir copias</strong><small>Ayudar a otras personas</small></span><i class="tab-prog" aria-hidden="true"></i></button>
+            <button class="eco-tab" role="tab" id="lib-tab-3" aria-controls="lib-panel-3" aria-selected="false" tabindex="-1" type="button"><span class="n">3</span><span><strong>Compartir tus mejoras</strong><small>Beneficia a toda la comunidad</small></span><i class="tab-prog" aria-hidden="true"></i></button>
+          </div>
+          <div>
+          <div class="eco-panel" role="tabpanel" id="lib-panel-0" aria-labelledby="lib-tab-0">
+            <span class="eco-panel-num" aria-hidden="true">0</span>
+            <h3>Libertad 0: ejecutarlo</h3>
+            <p>La libertad de <strong>ejecutar el programa</strong> como desees y con cualquier propósito: personal, educativo, empresarial o de investigación, sin pedir permiso a nadie.</p>
+            <div class="eco-example"><b>Ejemplo</b><span>Instalar Linux en tu casa, en una escuela o en un banco, sin pagar licencias por equipo ni pedir autorización.</span></div>
+          </div>
+          <div class="eco-panel" role="tabpanel" id="lib-panel-1" aria-labelledby="lib-tab-1" hidden>
+            <span class="eco-panel-num" aria-hidden="true">1</span>
+            <h3>Libertad 1: estudiarlo y cambiarlo</h3>
+            <p>La libertad de <strong>estudiar cómo funciona</strong> el programa y de modificarlo para que haga lo que tú necesites. Para eso es indispensable tener acceso al código fuente.</p>
+            <div class="eco-example"><b>Ejemplo</b><span>Abrir el código de Firefox, entender cómo gestiona las pestañas y ajustarlo para tu propio uso.</span></div>
+          </div>
+          <div class="eco-panel" role="tabpanel" id="lib-panel-2" aria-labelledby="lib-tab-2" hidden>
+            <span class="eco-panel-num" aria-hidden="true">2</span>
+            <h3>Libertad 2: redistribuir copias</h3>
+            <p>La libertad de <strong>redistribuir copias</strong> del programa para ayudar a otras personas, ya sea gratis o cobrando por el servicio de entregarlo o darle soporte.</p>
+            <div class="eco-example"><b>Ejemplo</b><span>Grabar una distro Linux en una USB y regalársela a un compañero de clase.</span></div>
+          </div>
+          <div class="eco-panel" role="tabpanel" id="lib-panel-3" aria-labelledby="lib-tab-3" hidden>
+            <span class="eco-panel-num" aria-hidden="true">3</span>
+            <h3>Libertad 3: compartir tus mejoras</h3>
+            <p>La libertad de <strong>distribuir tus versiones modificadas</strong> a terceros, dándole a la comunidad la oportunidad de beneficiarse de tus cambios.</p>
+            <div class="eco-example"><b>Ejemplo</b><span>Tu corrección de un error en un proyecto termina en la siguiente versión que usa todo el mundo.</span></div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="eco-sec" id="terminal">
+        <div class="qe-term-wrap">
+          <div class="qe-term-copy reveal">
+            <span class="eco-eyebrow" style="color:var(--ink);background:rgba(11,30,61,.06);border-color:rgba(11,30,61,.18)">Pruébalo tú</span>
+            <h2>Abre un proyecto abierto. Explóralo.</h2>
+            <p>Esto es una terminal simulada. Lee el README, mira la licencia, revisa el historial de cambios y clona el repositorio: justo lo que haría alguien que contribuye. Escribe un comando o toca uno de los botones.</p>
+            <div class="qe-term-prog" data-term-prog><span><em style="font-style:normal">Comandos explorados</em><em style="font-style:normal"><b data-term-n>0</b> / 8</em></span><div class="bar"><i></i></div></div>
+            <div class="qe-reward" data-term-reward hidden>Recorrido completo. Ya sabes moverte por un proyecto abierto. El siguiente paso es real: <a href="comunidad.html#participar">abre tu primer Pull Request →</a></div>
+          </div>
+          <div class="term-win reveal" data-term>
+            <div class="term-bar"><i></i><i></i><i></i><span>visitante@open-source: ~/proyecto-abierto · simulación</span></div>
+            <div class="term-out" role="log" aria-live="polite" aria-label="Salida de la terminal" data-lenis-prevent tabindex="0"></div>
+            <form class="term-form" autocomplete="off"><label class="term-prompt" for="termInput">$</label><input class="term-input" id="termInput" type="text" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="escribe help y presiona Enter"></form>
+            <div class="term-chips" aria-label="Comandos sugeridos"><button type="button" class="term-chip" data-cmd="help">help</button><button type="button" class="term-chip" data-cmd="ls">ls</button><button type="button" class="term-chip" data-cmd="cat README.md">cat README.md</button><button type="button" class="term-chip" data-cmd="cat LICENSE">cat LICENSE</button><button type="button" class="term-chip" data-cmd="cat CONTRIBUTING.md">cat CONTRIBUTING.md</button><button type="button" class="term-chip" data-cmd="git log --oneline">git log --oneline</button><button type="button" class="term-chip" data-cmd="git clone">git clone</button><button type="button" class="term-chip" data-cmd="whoami">whoami</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="eco-sec" id="mitos">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="white" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-.8.6-1.5 1-1.5 2M12 17h.01" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h2>Cuatro mitos del código abierto</h2>
+        </div>
+        <p class="section-intro reveal">Toca cada tarjeta para descubrir qué hay de cierto.</p>
+        <div class="myth-count reveal" aria-live="polite"><div class="myth-bar"><i></i></div><span><b data-myth-n>0</b> de 4 mitos desmentidos</span></div>
+        <div class="myth-grid">
+          <button type="button" class="myth reveal" style="--i:0" aria-pressed="false">
+            <span class="myth-in">
+              <span class="myth-face myth-front"><small>Mito 1</small><b>"Open Source significa que es gratis"</b><em>Toca para ver la verdad</em></span>
+              <span class="myth-face myth-back" aria-hidden="true"><small>En realidad…</small><span>No siempre. "Abierto" habla del código, no del precio: hay software abierto que se vende y empresas como Red Hat ofrecen suscripciones de soporte sobre él.</span></span>
+            </span>
+          </button>
+          <button type="button" class="myth reveal" style="--i:1" aria-pressed="false">
+            <span class="myth-in">
+              <span class="myth-face myth-front"><small>Mito 2</small><b>"Si el código es público, es menos seguro"</b><em>Toca para ver la verdad</em></span>
+              <span class="myth-face myth-back" aria-hidden="true"><small>En realidad…</small><span>No necesariamente. Que sea público permite que mucha gente lo revise y encuentre fallos; la seguridad depende de cómo se mantiene, no de ocultarlo.</span></span>
+            </span>
+          </button>
+          <button type="button" class="myth reveal" style="--i:2" aria-pressed="false">
+            <span class="myth-in">
+              <span class="myth-face myth-front"><small>Mito 3</small><b>"Solo programadores expertos pueden contribuir"</b><em>Toca para ver la verdad</em></span>
+              <span class="myth-face myth-back" aria-hidden="true"><small>En realidad…</small><span>Falso. También se colabora con documentación, traducciones, diseño, pruebas y reportes de errores bien explicados.</span></span>
+            </span>
+          </button>
+          <button type="button" class="myth reveal" style="--i:3" aria-pressed="false">
+            <span class="myth-in">
+              <span class="myth-face myth-front"><small>Mito 4</small><b>"Nadie puede ganar dinero con software abierto"</b><em>Toca para ver la verdad</em></span>
+              <span class="myth-face myth-back" aria-hidden="true"><small>En realidad…</small><span>Sí se puede: empresas como Red Hat (IBM) o Canonical viven de soporte, servicios y productos construidos sobre software abierto.</span></span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="eco-sec" id="licencias">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z" stroke="white" stroke-width="2" stroke-linejoin="round"/><path d="M14 3v5h5M9 13h6M9 17h6" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h2>Licencias: las reglas del juego</h2>
+        </div>
+        <p class="section-intro reveal">Sin licencia, el código no se puede reutilizar legalmente. Estas tres son las más comunes. Dinos qué buscas y te resaltamos la que mejor encaja.</p>
+        <p class="lic-ask reveal">Yo quiero…</p>
+        <div class="lic-picker reveal" data-picker role="group" aria-label="Elige qué buscas en una licencia">
+          <button type="button" class="org-chip" data-pick="mit" aria-pressed="false">Que cualquiera use mi código, incluso en software cerrado</button>
+          <button type="button" class="org-chip" data-pick="gpl" aria-pressed="false">Que todo cambio siga siendo libre</button>
+          <button type="button" class="org-chip" data-pick="apache" aria-pressed="false">Libertad total, con protección de patentes</button>
+        </div>
+        <div class="lic-grid">
+          <article class="lic-card reveal" data-lic="mit" style="--i:0">
+            <span class="lic-flag">La que te conviene</span>
+            <h3>MIT</h3>
+            <div class="lic-kind">Permisiva · la más corta</div>
+            <p>Casi no pone condiciones: puedes usar el código incluso dentro de software cerrado, siempre que conserves el aviso de copyright y la licencia.</p>
+            <div class="lic-meter"><small><span>Permisiva</span><span>Copyleft</span></small><div class="lic-track"><span class="lic-fill" style="--p:6%"></span></div></div>
+            <ul class="lic-list"><li>Uso comercial</li><li>Modificar y redistribuir</li><li>Puede integrarse en software propietario</li><li class="no">Debes conservar el aviso de la licencia</li></ul>
+            <div class="lic-used"><b>La usan:</b> React, Node.js, Ruby on Rails</div>
+          </article>
+          <article class="lic-card reveal" data-lic="apache" style="--i:1">
+            <span class="lic-flag">La que te conviene</span>
+            <h3>Apache 2.0</h3>
+            <div class="lic-kind">Permisiva · con patentes</div>
+            <p>Parecida a MIT, pero añade una concesión expresa de patentes y pide que indiques los cambios que hiciste. Muy usada en proyectos con respaldo empresarial.</p>
+            <div class="lic-meter"><small><span>Permisiva</span><span>Copyleft</span></small><div class="lic-track"><span class="lic-fill" style="--p:14%"></span></div></div>
+            <ul class="lic-list"><li>Uso comercial</li><li>Incluye concesión de patentes</li><li>Compatible con software propietario</li><li class="no">Debes indicar los cambios y conservar los avisos</li></ul>
+            <div class="lic-used"><b>La usan:</b> Kubernetes, Android (AOSP), Apache HTTP Server</div>
+          </article>
+          <article class="lic-card reveal" data-lic="gpl" style="--i:2">
+            <span class="lic-flag">La que te conviene</span>
+            <h3>GPL v3</h3>
+            <div class="lic-kind">Copyleft fuerte</div>
+            <p>Cualquiera puede usarla y modificarla, pero toda versión derivada que distribuyas debe seguir siendo libre y publicar su código fuente bajo la misma licencia.</p>
+            <div class="lic-meter"><small><span>Permisiva</span><span>Copyleft</span></small><div class="lic-track"><span class="lic-fill" style="--p:100%"></span></div></div>
+            <ul class="lic-list"><li>Uso comercial</li><li>Garantiza que el software siga siendo libre</li><li class="no">Los derivados deben ser también GPL</li><li class="no">Debes entregar el código fuente</li></ul>
+            <div class="lic-used"><b>La usan:</b> GCC, GIMP, Bash</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="eco-sec" id="comparativa">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h2>¿Open Source, libre, gratis o propietario?</h2>
+        </div>
+        <p class="section-intro reveal">Se confunden mucho. "Gratis" habla de precio; "open source" y "libre" hablan de qué puedes hacer con el código.</p>
+        <div class="cmp-wrap reveal">
+          <table class="cmp">
+            <thead><tr><th></th><th class="hl">Open Source</th><th>Software libre</th><th>Freeware</th><th>Propietario</th></tr></thead>
+            <tbody><tr><th scope="row">Código fuente visible</th><td class="hl"><span class="y">Sí</span></td><td><span class="y">Sí</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr><tr><th scope="row">Puedes modificarlo</th><td class="hl"><span class="y">Sí</span></td><td><span class="y">Sí</span></td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr><tr><th scope="row">Puedes redistribuirlo</th><td class="hl"><span class="y">Sí</span></td><td><span class="y">Sí</span></td><td><span class="m">Según el autor</span></td><td><span class="no">No</span></td></tr><tr><th scope="row">Siempre es gratuito</th><td class="hl"><span class="m">No siempre</span></td><td><span class="m">No siempre</span></td><td><span class="y">Sí</span></td><td><span class="m">Depende</span></td></tr><tr><th scope="row">Enfoque</th><td class="hl">Calidad y colaboración práctica</td><td>Libertad como derecho ético</td><td>Uso sin costo</td><td>Control del fabricante</td></tr><tr><th scope="row">Ejemplos</th><td class="hl">Linux, Firefox, Python</td><td>GNU Emacs, GIMP, LibreOffice</td><td>Adobe Reader, Google Chrome</td><td>Windows, Photoshop</td></tr></tbody>
+          </table>
+        </div>
+        <p class="cmp-note reveal">En la práctica casi todo el software libre es también open source y viceversa; la diferencia está sobre todo en el discurso: el software libre defiende la libertad como derecho, el open source subraya las ventajas prácticas de colaborar.</p>
+      </section>
+
+      <section class="eco-sec" id="contribuir">
+        <div class="section-head reveal">
+          <div class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="6" r="2.5" stroke="white" stroke-width="2"/><circle cx="6" cy="18" r="2.5" stroke="white" stroke-width="2"/><circle cx="18" cy="9" r="2.5" stroke="white" stroke-width="2"/><path d="M6 8.5v7M18 11.5c0 3-4 3-8 3.5" stroke="white" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h2>Así se contribuye a un proyecto abierto</h2>
+        </div>
+        <p class="section-intro reveal">Colaborar no requiere ser experto. Este es el camino típico en plataformas como GitHub:</p>
+        <div class="eco-flow">
+          <div class="eco-step reveal" style="--i:0"><div class="num">1</div><h3>Haz un fork</h3><p>Copias el repositorio del proyecto a tu cuenta para trabajar sin riesgo. En Git: <code>git clone</code>.</p></div>
+          <div class="eco-step reveal" style="--i:1"><div class="num">2</div><h3>Cambia el código</h3><p>Corriges un error, agregas una función o mejoras la documentación en tu propia rama.</p></div>
+          <div class="eco-step reveal" style="--i:2"><div class="num">3</div><h3>Abre un Pull Request</h3><p>Propones tus cambios al proyecto original con una explicación clara de qué hiciste y por qué.</p></div>
+          <div class="eco-step reveal" style="--i:3"><div class="num">4</div><h3>Revisión y merge</h3><p>Las personas mantenedoras lo revisan, piden ajustes y, si todo va bien, lo integran al proyecto.</p></div>
+        </div>
+        <div class="eco-cta-row reveal"><a class="eco-btn" href="comunidad.html#participar">Aprende a participar <span>→</span></a></div>
+      </section>
+
+      <section class="qe-final" aria-labelledby="qeFinalT">
+        <span class="eco-eyebrow">Ahora te toca a ti</span>
+        <h2 id="qeFinalT">El código es de todos. <em>Súmate.</em></h2>
+        <p>No necesitas ser experta ni experto: un error corregido, una traducción o una duda bien explicada ya cuentan. Todos los proyectos que viste hoy empezaron con alguien que se animó.</p>
+        <div class="qe-cta">
+          <a class="qe-btn qe-btn-main" href="comunidad.html#participar" data-magnet>Aprende a participar <span>→</span></a>
+          <a class="qe-btn qe-btn-ghost" href="herramientas.html" data-magnet>Explora las herramientas</a>
+        </div>
+      </section>
+
+      <nav class="page-nav reveal" aria-label="Navegación entre secciones del ecosistema">
+        <a href="historia.html" class="next"><small>Siguiente →</small><strong>Historia</strong><span>De GNU y Linux al ecosistema actual</span></a>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="../index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/que-es-gsap.js"></script>
+
+</body>
+</html>

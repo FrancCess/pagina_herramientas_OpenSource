@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Source · Herramientas de Open Source</title>
+<meta name="description" content="Descubre el ecosistema Open Source: distros Linux, ofimática, edición, juegos, lenguajes, frameworks y cómo participar.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="alternate icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <script src="js/loader.js"></script>
+
+  <a class="visually-hidden-focusable" href="#secciones">Saltar al contenido</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+
+          <!-- Ecosistema -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="pages/ecosistema.html">Visión general</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="pages/que-es.html">¿Qué es?</a></li>
+              <li><a class="dropdown-item" href="pages/historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="pages/organizaciones.html">Organizaciones</a></li>
+            </ul>
+          </li>
+
+          <!-- Herramientas -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="pages/herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="pages/distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item" href="pages/ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item" href="pages/edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="pages/juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="pages/utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+
+          <!-- Desarrollo -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="pages/desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="pages/desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+
+          <!-- Comunidad -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="pages/comunidad.html#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="pages/comunidad.html#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="pages/comunidad.html#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero-banner">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 reveal">
+          <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>  Disfruta, aporta, colabora...</div>
+          <h1>Open<br><span class="accent">Source.</span></h1>
+          <p class="hero-sub">El software que mueve el mundo es abierto, gratuito y construido por millones de personas. Sin costo, sin límites.</p>
+          <div class="hero-pills">
+            <span class="hero-pill lit">GPL</span>
+            <span class="hero-pill">MIT</span>
+            <span class="hero-pill">Apache 2.0</span>
+            <span class="hero-pill">BSD</span>
+          </div>
+          <div class="hero-actions">
+            <a href="pages/herramientas.html" class="btn-primary-os">Explorar herramientas →</a>
+            <a href="pages/que-es.html" class="btn-ghost-os">¿Qué es?</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <div class="bit-stage" data-bit-stage>
+            <div class="bit" data-bit role="button" tabindex="0" aria-label="Bit, la mascota: sigue tu cursor con la mirada. Pulsa para saludar">
+              <div class="bit-bob">
+                <svg class="bit-head" data-bit-head viewBox="0 0 260 230" aria-hidden="true" focusable="false">
+                  <defs>
+                    <linearGradient id="bitHead" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d7e2f2"/></linearGradient>
+                    <linearGradient id="bitScreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#10264a"/><stop offset="1" stop-color="#071329"/></linearGradient>
+                  </defs>
+                  <line x1="130" y1="40" x2="130" y2="16" stroke="#9fb3cf" stroke-width="6" stroke-linecap="round"/>
+                  <circle class="bit-led" cx="130" cy="12" r="10" fill="#C8F135"/>
+                  <rect x="4" y="90" width="26" height="58" rx="13" fill="#C8F135"/>
+                  <rect x="230" y="90" width="26" height="58" rx="13" fill="#C8F135"/>
+                  <path d="M21 106 L13 119 L21 132" fill="none" stroke="#0B1E3D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M239 106 L247 119 L239 132" fill="none" stroke="#0B1E3D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="22" y="38" width="216" height="168" rx="56" fill="url(#bitHead)" stroke="#b4c4dc" stroke-width="2"/>
+                  <ellipse cx="82" cy="58" rx="34" ry="9" fill="#fff" opacity=".7"/>
+                  <g data-bit-face>
+                    <rect x="46" y="62" width="168" height="120" rx="36" fill="url(#bitScreen)"/>
+                    <ellipse cx="66" cy="148" rx="13" ry="8" fill="#ff8fb1" opacity=".5"/>
+                    <ellipse cx="194" cy="148" rx="13" ry="8" fill="#ff8fb1" opacity=".5"/>
+                    <g class="bit-eyes">
+                      <g data-eye="98 112"><circle r="27" fill="#fff"/><g data-pupil><circle r="13" fill="#0B1E3D"/><circle cx="-4.5" cy="-4.5" r="4.5" fill="#fff"/><circle cx="5" cy="5" r="2" fill="#fff" opacity=".7"/></g></g>
+                      <g data-eye="162 112"><circle r="27" fill="#fff"/><g data-pupil><circle r="13" fill="#0B1E3D"/><circle cx="-4.5" cy="-4.5" r="4.5" fill="#fff"/><circle cx="5" cy="5" r="2" fill="#fff" opacity=".7"/></g></g>
+                    </g>
+                    <g class="bit-happy" fill="none" stroke="#C8F135" stroke-width="8" stroke-linecap="round"><path d="M72 120 Q98 88 124 120"/><path d="M136 120 Q162 88 188 120"/></g>
+                    <path class="bit-mouth" d="M114 154 Q130 166 146 154" fill="none" stroke="#C8F135" stroke-width="5" stroke-linecap="round"/>
+                    <path class="bit-mouth-open" d="M108 150 Q130 182 152 150 Z" fill="#C8F135"/>
+                  </g>
+                </svg>
+              </div>
+              <svg class="bit-hands" viewBox="0 0 260 48" aria-hidden="true" focusable="false">
+                <g fill="#fff" stroke="#b4c4dc" stroke-width="2">
+                  <g class="bit-hand"><rect x="34" y="2" width="52" height="20" rx="10"/><rect x="38" y="14" width="13" height="26" rx="6.5"/><rect x="53" y="14" width="13" height="29" rx="6.5"/><rect x="68" y="14" width="13" height="26" rx="6.5"/></g>
+                  <g class="bit-hand bit-hand-r"><rect x="174" y="2" width="52" height="20" rx="10"/><rect x="179" y="14" width="13" height="26" rx="6.5"/><rect x="194" y="14" width="13" height="29" rx="6.5"/><rect x="209" y="14" width="13" height="26" rx="6.5"/></g>
+                </g>
+              </svg>
+              <div class="bit-say" data-bit-say role="status" aria-live="polite"></div>
+            </div>
+            <div class="hero-code">
+            <div><span class="c-comment"># El código que mueve el mundo</span></div>
+            <div><span class="c-green">import</span> <span class="c-blue">linux</span>, <span class="c-blue">python</span>, <span class="c-blue">git</span></div>
+            <div>&nbsp;</div>
+            <div><span class="c-green">def</span> <span class="c-orange">build_the_future</span>():</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;contributors = <span class="c-blue">180_000_000</span></div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;cost = <span class="c-blue">$0</span></div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-green">return</span> world.better()</div>
+            <div>&nbsp;</div>
+            <div><span class="c-comment"># Tú también puedes contribuir</span></div>
+            <div><span class="c-orange">build_the_future</span>()<span class="hero-cursor" aria-hidden="true"></span></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ CARRUSEL ============ -->
+  <section id="herramientas-marquee">
+    <div class="container">
+      <p class="marquee-label reveal">Herramientas del ecosistema open source</p>
+    </div>
+    <div class="marquee-outer reveal">
+      <div class="marquee">
+        <div class="marquee-track" id="marqueeTrack">
+          <a href="pages/tools/ubuntu.html" class="tool"><div class="icon-circle"><i class="devicon-ubuntu-plain colored"></i></div></a>
+          <a href="pages/tools/debian.html" class="tool"><div class="icon-circle"><i class="devicon-debian-plain colored"></i></div></a>
+          <a href="pages/tools/fedora.html" class="tool"><div class="icon-circle"><i class="devicon-fedora-plain colored"></i></div></a>
+          <a href="pages/tools/git.html" class="tool"><div class="icon-circle"><i class="devicon-git-plain colored"></i></div></a>
+          <a href="pages/tools/docker.html" class="tool"><div class="icon-circle"><i class="devicon-docker-plain colored"></i></div></a>
+          <a href="pages/tools/python.html" class="tool"><div class="icon-circle"><i class="devicon-python-plain colored"></i></div></a>
+          <a href="pages/tools/javascript.html" class="tool"><div class="icon-circle"><i class="devicon-javascript-plain colored"></i></div></a>
+          <a href="pages/tools/php.html" class="tool"><div class="icon-circle"><i class="devicon-php-plain colored"></i></div></a>
+          <a href="pages/tools/react.html" class="tool"><div class="icon-circle"><i class="devicon-react-original colored"></i></div></a>
+          <a href="pages/tools/postgresql.html" class="tool"><div class="icon-circle"><i class="devicon-postgresql-plain colored"></i></div></a>
+          <a href="pages/tools/django.html" class="tool"><div class="icon-circle"><i class="devicon-django-plain colored"></i></div></a>
+          <a href="pages/tools/nginx.html" class="tool"><div class="icon-circle"><i class="devicon-nginx-original colored"></i></div></a>
+          <a href="pages/tools/vue-js.html" class="tool"><div class="icon-circle"><i class="devicon-vuejs-plain colored"></i></div></a>
+          <a href="pages/tools/firefox.html" class="tool"><div class="icon-circle"><i class="devicon-firefox-plain colored"></i></div></a>
+          <a href="pages/tools/blender.html" class="tool"><div class="icon-circle"><i class="devicon-blender-original colored"></i></div></a>
+          <a href="pages/tools/vs-code.html" class="tool"><div class="icon-circle"><i class="devicon-vscode-plain colored"></i></div></a>
+          <a href="pages/tools/kubernetes.html" class="tool"><div class="icon-circle"><i class="devicon-kubernetes-plain colored"></i></div></a>
+          <a href="pages/tools/angular.html" class="tool"><div class="icon-circle"><i class="devicon-angularjs-plain colored"></i></div></a>
+          <a href="pages/tools/rust.html" class="tool"><div class="icon-circle"><i class="devicon-rust-plain"></i></div></a>
+          <a href="pages/tools/go.html" class="tool"><div class="icon-circle"><i class="devicon-go-plain colored"></i></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECCIONES HUB ============ -->
+  <main>
+    <div class="container" id="secciones">
+
+      <!-- ============ QUÉ ES OPEN SOURCE ============ -->
+      <section id="que-es" style="padding-top: 2.5rem; margin-top: 0;">
+        <div class="section-head reveal">
+          <div class="icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" stroke="white" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="white"/></svg>
+          </div>
+          <h2>¿Qué es Open Source?</h2>
+        </div>
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7 reveal">
+            <div class="text-block">
+              <p><strong>Open Source</strong> (código abierto) describe software cuyo código fuente se publica de forma abierta: cualquier persona puede leerlo, usarlo, modificarlo y redistribuirlo. No se trata solo de que el programa sea gratuito, lo central es la <strong>transparencia del código</strong> y la libertad para intervenir en él.</p>
+              <p>Este modelo se sostiene en licencias específicas (GPL, MIT, Apache) que definen legalmente qué se puede hacer con ese código, y en comunidades globales que colaboran de forma distribuida sin pertenecer a una misma empresa ni país.</p>
+              <p class="mb-0">Hoy el Open Source es la base de <strong>gran parte de la infraestructura tecnológica global</strong>: el servidor que aloja esta página, el navegador con el que la lees, el sistema operativo de tu teléfono, todo tiene raíces en proyectos abiertos. Además, cualquiera puede participar.</p>
+            </div>
+            <p class="reveal mt-3 mb-0"><a href="pages/historia.html" class="hub-link" style="text-decoration:none;">Conoce la historia completa →</a></p>
+          </div>
+          <div class="col-lg-5 reveal">
+            <figure class="section-figure has-illustration">
+              <svg class="figure-illustration" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#0A0A0A"/>
+<g opacity="0.18" stroke="#FFFFFF" stroke-width="1">
+  <path d="M0 40h400M0 90h400M0 140h400M0 190h400M0 240h400"/>
+</g>
+<path d="M60 250 V120 Q60 90 90 90 H220" stroke="#C8F135" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M150 250 V170 Q150 140 180 140 H320" stroke="#FFFFFF" stroke-width="3" fill="none" opacity="0.55" stroke-linecap="round"/>
+<path d="M240 250 V90" stroke="#C8F135" stroke-width="3" fill="none" opacity="0.85" stroke-linecap="round"/>
+<circle cx="60" cy="250" r="9" fill="#0A0A0A" stroke="#C8F135" stroke-width="3"/>
+<circle cx="150" cy="250" r="9" fill="#0A0A0A" stroke="#FFFFFF" stroke-width="3" opacity="0.7"/>
+<circle cx="240" cy="250" r="9" fill="#0A0A0A" stroke="#C8F135" stroke-width="3"/>
+<circle cx="220" cy="90" r="10" fill="#C8F135"/>
+<circle cx="320" cy="140" r="8" fill="#FFFFFF" opacity="0.6"/>
+<circle cx="240" cy="90" r="10" fill="#C8F135"/>
+<rect x="196" y="66" width="88" height="48" rx="8" fill="none" stroke="#C8F135" stroke-width="1.4" opacity="0.5"/>
+<path d="M330 60l14 14-14 14M346 74h-16" stroke="#C8F135" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+</svg>
+              <figcaption>Un proyecto, mil manos: así se construye el open source</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="stats-band" class="stats-band reveal" style="margin-top: 2.5rem;">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">Cientos</div>
+            <div class="stat-label">proyectos bajo el paraguas de la Linux Foundation</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="700000" data-suffix="+">0</div>
+            <div class="stat-label">paquetes publicados en PyPI</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="15000" data-suffix="+">0</div>
+            <div class="stat-label">juegos de Steam jugables en Linux gracias a Proton (ProtonDB)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number stat-static">$0</div>
+            <div class="stat-label">lo que pagas por usarlo.</div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============ CUATRO LIBERTADES ============ -->
+      <section class="ix-sec ix-free" id="libertades" data-ix-free>
+        <p class="section-label reveal">Lo esencial</p>
+        <h2 class="reveal">Las cuatro libertades</h2>
+        <p class="section-intro reveal">La Free Software Foundation las definió para explicar qué hace "libre" a un programa. Toca cada una.</p>
+        <div class="ix-free-grid">
+          <div class="ix-free-tabs" role="tablist" aria-label="Las cuatro libertades del software libre">
+            <button class="ix-ft is-on" role="tab" aria-selected="true" aria-controls="ixf0" id="ixt0" type="button"><b>0</b><span>Usarlo para lo que quieras</span></button>
+            <button class="ix-ft" role="tab" aria-selected="false" aria-controls="ixf1" id="ixt1" type="button" tabindex="-1"><b>1</b><span>Estudiarlo y cambiarlo</span></button>
+            <button class="ix-ft" role="tab" aria-selected="false" aria-controls="ixf2" id="ixt2" type="button" tabindex="-1"><b>2</b><span>Compartir copias</span></button>
+            <button class="ix-ft" role="tab" aria-selected="false" aria-controls="ixf3" id="ixt3" type="button" tabindex="-1"><b>3</b><span>Compartir tus mejoras</span></button>
+          </div>
+          <div class="ix-free-stage">
+            <div class="ix-fp is-on" role="tabpanel" id="ixf0" aria-labelledby="ixt0">
+              <span class="ix-fp-n" aria-hidden="true">0</span>
+              <h3>Ejecutar el programa para cualquier propósito</h3>
+              <p>Trabajo, escuela, negocio o diversión: no necesitas pedir permiso ni justificar para qué lo usas.</p>
+              <div class="ix-term"><i></i><i></i><i></i><pre><span class="c"># sin permisos especiales</span>
+<span class="p">$</span> firefox &amp;
+<span class="p">$</span> libreoffice --writer</pre></div>
+            </div>
+            <div class="ix-fp" role="tabpanel" id="ixf1" aria-labelledby="ixt1" hidden>
+              <span class="ix-fp-n" aria-hidden="true">1</span>
+              <h3>Estudiar cómo funciona y modificarlo</h3>
+              <p>Tener el código fuente permite entender el programa por dentro y adaptarlo a tus necesidades. Es la base de aprender de verdad.</p>
+              <div class="ix-term"><i></i><i></i><i></i><pre><span class="c"># leer el código del kernel Linux</span>
+<span class="p">$</span> git clone https://github.com/torvalds/linux
+<span class="p">$</span> less linux/kernel/sched/core.c</pre></div>
+            </div>
+            <div class="ix-fp" role="tabpanel" id="ixf2" aria-labelledby="ixt2" hidden>
+              <span class="ix-fp-n" aria-hidden="true">2</span>
+              <h3>Redistribuir copias para ayudar a otros</h3>
+              <p>Puedes dar o vender copias del programa. Si algo te sirvió, puedes pasárselo a tu compañero, a tu escuela o a tu comunidad.</p>
+              <div class="ix-term"><i></i><i></i><i></i><pre><span class="c"># pasar una copia en una USB</span>
+<span class="p">$</span> cp -r mi-programa/ /media/usb/
+<span class="p">$</span> echo "listo para compartir"</pre></div>
+            </div>
+            <div class="ix-fp" role="tabpanel" id="ixf3" aria-labelledby="ixt3" hidden>
+              <span class="ix-fp-n" aria-hidden="true">3</span>
+              <h3>Distribuir copias de tus versiones modificadas</h3>
+              <p>Si mejoras el programa, puedes publicar tu versión para que todos se beneficien. Así nacen las distros derivadas: Ubuntu partió de Debian y Linux Mint de Ubuntu.</p>
+              <div class="ix-term"><i></i><i></i><i></i><pre><span class="c"># tu propia versión</span>
+<span class="p">$</span> git checkout -b mi-version
+<span class="p">$</span> git commit -m "Mejora para la comunidad"</pre></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LICENCIAS ============ -->
+      <section class="ix-sec ix-lic-sec" id="licencias-rapidas">
+        <p class="section-label reveal">Reglas del juego</p>
+        <h2 class="reveal">Licencias en 30 segundos</h2>
+        <p class="section-intro reveal">La licencia dice qué puedes hacer con el código. Voltea cada tarjeta para ver qué permite y qué exige.</p>
+        <div class="ix-spectrum reveal" aria-hidden="true"><span>Permisiva</span><i></i><span>Copyleft</span></div>
+        <div class="ix-lic-grid">
+          <button class="ix-lic reveal" type="button" aria-pressed="false" style="--lc:#5BC0FF">
+            <span class="ix-lic-in">
+              <span class="ix-lic-f"><small>Permisiva</small><b>MIT</b><em>Haz casi lo que quieras con el código.</em><u>Toca para voltear</u></span>
+              <span class="ix-lic-b"><small>MIT</small><p><strong>Puedes:</strong> usarlo, modificarlo y venderlo, incluso en software cerrado.</p><p><strong>Debes:</strong> conservar el aviso de copyright y la licencia.</p><p class="ex">Ejemplos: React, Ruby on Rails.</p></span>
+            </span>
+          </button>
+          <button class="ix-lic reveal" type="button" aria-pressed="false" style="--lc:#9B8CFF">
+            <span class="ix-lic-in">
+              <span class="ix-lic-f"><small>Permisiva</small><b>Apache 2.0</b><em>Permisiva y con permiso explícito de patentes.</em><u>Toca para voltear</u></span>
+              <span class="ix-lic-b"><small>Apache 2.0</small><p><strong>Puedes:</strong> usarlo y modificarlo libremente, también en productos comerciales.</p><p><strong>Debes:</strong> mantener avisos e indicar los cambios importantes.</p><p class="ex">Ejemplos: Kubernetes, Apache HTTP Server.</p></span>
+            </span>
+          </button>
+          <button class="ix-lic reveal" type="button" aria-pressed="false" style="--lc:#C8F135">
+            <span class="ix-lic-in">
+              <span class="ix-lic-f"><small>Permisiva</small><b>BSD</b><em>Parecida a MIT: pocas condiciones.</em><u>Toca para voltear</u></span>
+              <span class="ix-lic-b"><small>BSD</small><p><strong>Puedes:</strong> reutilizar el código con mucha libertad, incluso en software propietario.</p><p><strong>Debes:</strong> conservar el aviso de copyright y el descargo de responsabilidad.</p><p class="ex">Ejemplos: FreeBSD, nginx.</p></span>
+            </span>
+          </button>
+          <button class="ix-lic reveal" type="button" aria-pressed="false" style="--lc:#FF7A7A">
+            <span class="ix-lic-in">
+              <span class="ix-lic-f"><small>Copyleft</small><b>GPL</b><em>Lo que derives debe seguir siendo libre.</em><u>Toca para voltear</u></span>
+              <span class="ix-lic-b"><small>GPL</small><p><strong>Puedes:</strong> usarlo, estudiarlo, modificarlo y distribuirlo.</p><p><strong>Debes:</strong> si distribuyes una versión derivada, publicarla bajo la misma licencia con su código.</p><p class="ex">Ejemplos: kernel Linux, GIMP.</p></span>
+            </span>
+          </button>
+        </div>
+        <p class="reveal" style="margin-top:14px"><a href="pages/que-es.html" class="hub-link" style="text-decoration:none;">Más sobre qué es Open Source →</a></p>
+      </section>
+
+      <!-- ============ HITOS ============ -->
+      <section class="ix-sec ix-hitos" id="hitos" data-ix-tl>
+        <div class="ix-hitos-panel">
+          <div class="ix-hitos-head">
+            <div>
+              <p class="section-label">Historia exprés</p>
+              <h2>De un anuncio a un movimiento global</h2>
+            </div>
+            <div class="ix-hitos-ctl">
+              <button type="button" data-tl-prev aria-label="Hito anterior">←</button>
+              <button type="button" data-tl-next aria-label="Hito siguiente">→</button>
+            </div>
+          </div>
+          <div class="ix-tl-scroll" data-tl-scroll tabindex="0" role="region" aria-label="Hitos del software libre; desplázate horizontalmente">
+            <ol class="ix-tl-track">
+              <li class="ix-tl-card"><b>1983</b><h3>Nace el proyecto GNU</h3><p>Richard Stallman anuncia su plan de crear un sistema operativo completamente libre.</p></li>
+              <li class="ix-tl-card"><b>1991</b><h3>Llega Linux</h3><p>Linus Torvalds anuncia el kernel que, junto a las herramientas GNU, forma el sistema que hoy llamamos Linux.</p></li>
+              <li class="ix-tl-card"><b>1998</b><h3>"Open source" y la OSI</h3><p>Se populariza el término y se funda la Open Source Initiative para promover el modelo.</p></li>
+              <li class="ix-tl-card"><b>2005</b><h3>Nace Git</h3><p>Torvalds crea Git para coordinar el desarrollo del kernel: hoy es el control de versiones estándar.</p></li>
+              <li class="ix-tl-card"><b>2008</b><h3>GitHub</h3><p>Se lanza GitHub y colaborar en código abierto se vuelve cuestión de un clic y un pull request.</p></li>
+              <li class="ix-tl-card"><b>2018</b><h3>Microsoft y GitHub</h3><p>Microsoft compra GitHub: una señal de cuánto pesa el código abierto incluso en las grandes empresas.</p></li>
+            </ol>
+          </div>
+          <div class="ix-tl-bar" aria-hidden="true"><i data-tl-prog></i></div>
+          <p class="ix-hitos-more"><a href="pages/historia.html">Ver la línea de tiempo completa →</a></p>
+        </div>
+      </section>
+
+      <section class="gl-stage" data-gl-stage aria-labelledby="gl-title">
+        <canvas class="gl-canvas" data-gl-canvas aria-hidden="true"></canvas>
+        <div class="gl-head">
+          <p class="section-label">Secciones</p>
+          <h2 id="gl-title">Explora el ecosistema</h2>
+          <p class="gl-intro">Cada sección profundiza en un tema. Elige por dónde empezar y mueve el mouse: las partículas reaccionan.</p>
+        </div>
+        <div class="gl-anchor" data-gl-anchor aria-hidden="true"></div>
+        <div class="gl-cards">
+          <a href="pages/ecosistema.html" class="gl-card gl-card--a" data-gl-card data-d="1.0">
+            <span class="gl-sheen" aria-hidden="true"></span>
+            <span class="gl-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" stroke="white" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="white"/></svg></span>
+            <h3>Ecosistema</h3>
+            <p>¿Qué es Open Source? Historia, licencias y las organizaciones que mueven el mundo del software libre.</p>
+            <span class="gl-link">Ver sección →</span>
+          </a>
+          <a href="pages/herramientas.html" class="gl-card gl-card--b" data-gl-card data-d="0.7">
+            <span class="gl-sheen" aria-hidden="true"></span>
+            <span class="gl-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/></svg></span>
+            <h3>Herramientas</h3>
+            <p>Distros Linux, ofimática, edición de imagen/video/audio, juegos y utilidades esenciales.</p>
+            <span class="gl-link">Ver sección →</span>
+          </a>
+          <a href="pages/desarrollo.html" class="gl-card gl-card--c" data-gl-card data-d="1.3">
+            <span class="gl-sheen" aria-hidden="true"></span>
+            <span class="gl-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M7 8l-4 4 4 4M17 8l4 4-4 4M14 4l-4 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3>Desarrollo</h3>
+            <p>Lenguajes de programación y frameworks open source que impulsan las aplicaciones del mundo.</p>
+            <span class="gl-link">Ver sección →</span>
+          </a>
+          <a href="pages/comunidad.html" class="gl-card gl-card--d" data-gl-card data-d="0.85">
+            <span class="gl-sheen" aria-hidden="true"></span>
+            <span class="gl-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3>Comunidad</h3>
+            <p>Cómo contribuir a proyectos, comparativa Open Source vs Comercial y la galería del ecosistema.</p>
+            <span class="gl-link">Ver sección →</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ DESTACADAS ============ -->
+      <section class="ix-sec ix-feat" id="destacadas">
+        <p class="section-label reveal">Para empezar hoy</p>
+        <h2 class="reveal">Herramientas que puedes instalar ya</h2>
+        <p class="section-intro reveal">Una muestra de lo que ofrece el ecosistema. Cada una tiene su ficha con descarga, alternativas y más.</p>
+        <div class="ix-feat-grid">
+          <a class="ix-fc reveal" href="pages/tools/ubuntu.html"><span class="ix-fc-i"><i class="devicon-ubuntu-plain colored"></i></span><b>Ubuntu</b><em>Sistema operativo</em><p>La distro de Linux más popular para empezar.</p></a>
+          <a class="ix-fc reveal" href="pages/tools/firefox.html"><span class="ix-fc-i"><i class="devicon-firefox-plain colored"></i></span><b>Firefox</b><em>Navegador</em><p>Navegador independiente que cuida tu privacidad.</p></a>
+          <a class="ix-fc reveal" href="pages/tools/libreoffice.html"><span class="ix-fc-i ix-mono">L</span><b>LibreOffice</b><em>Ofimática</em><p>Texto, hojas de cálculo y presentaciones.</p></a>
+          <a class="ix-fc reveal" href="pages/tools/gimp.html"><span class="ix-fc-i"><i class="devicon-gimp-plain colored"></i></span><b>GIMP</b><em>Edición de imagen</em><p>Retoque fotográfico y diseño sin suscripción.</p></a>
+          <a class="ix-fc reveal" href="pages/tools/blender.html"><span class="ix-fc-i"><i class="devicon-blender-original colored"></i></span><b>Blender</b><em>3D y animación</em><p>Modelado, animación y render en una sola herramienta.</p></a>
+          <a class="ix-fc reveal" href="pages/tools/git.html"><span class="ix-fc-i"><i class="devicon-git-plain colored"></i></span><b>Git</b><em>Control de versiones</em><p>Lleva el historial de tu código y colabora.</p></a>
+          <a class="ix-fc reveal" href="pages/tools/vs-code.html"><span class="ix-fc-i"><i class="devicon-vscode-plain colored"></i></span><b>VS Code</b><em>Editor de código</em><p>Editor ligero con miles de extensiones.</p></a>
+          <a class="ix-fc reveal" href="pages/tools/python.html"><span class="ix-fc-i"><i class="devicon-python-plain colored"></i></span><b>Python</b><em>Lenguaje</em><p>Ideal para aprender a programar y para ciencia de datos.</p></a>
+        </div>
+        <p class="reveal" style="margin-top:16px"><a href="pages/herramientas.html" class="hub-link" style="text-decoration:none;">Ver todas las herramientas →</a></p>
+      </section>
+
+      <!-- ============ QUIZ ============ -->
+      <section class="ix-sec ix-quiz" id="quiz-distro" data-ix-quiz>
+        <div class="ix-quiz-panel">
+          <p class="section-label">Test rápido</p>
+          <h2>¿Qué distro de Linux te conviene?</h2>
+          <p class="ix-quiz-intro">Cuatro preguntas y te recomiendo por dónde empezar.</p>
+          <div class="ix-q-wrap" aria-live="polite">
+            <div class="ix-q-prog" aria-hidden="true"><i data-q-prog></i></div>
+            <div class="ix-q" data-q-box></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="ix-sec ix-faq" id="preguntas">
+        <p class="section-label reveal">Dudas comunes</p>
+        <h2 class="reveal">Preguntas frecuentes</h2>
+        <div class="ix-faq-list">
+          <details class="reveal"><summary>¿Open Source significa gratis?</summary><p>No necesariamente. Significa que el código es accesible y puedes usarlo, estudiarlo, modificarlo y redistribuirlo según su licencia. Mucho software abierto es gratuito, pero hay proyectos y empresas que cobran por soporte, alojamiento o versiones comerciales.</p></details>
+          <details class="reveal"><summary>¿Es seguro usar software de código abierto?</summary><p>Que el código sea público permite que más personas lo revisen, pero eso no garantiza por sí solo la seguridad. Lo que importa es que el proyecto esté activo, publique actualizaciones y tenga una comunidad que atienda los problemas.</p></details>
+          <details class="reveal"><summary>¿Puedo usarlo en una empresa o en mi negocio?</summary><p>Casi siempre sí. Solo revisa la licencia: las permisivas (MIT, Apache, BSD) piden poco, y las copyleft como la GPL exigen compartir el código de las versiones derivadas que distribuyas.</p></details>
+          <details class="reveal"><summary>¿Cómo contribuyo si no sé programar?</summary><p>Hay muchas formas: mejorar la documentación, traducir, reportar errores con buen detalle, probar versiones nuevas, diseñar o ayudar a otras personas en foros. <a href="pages/comunidad.html">Aquí tienes una guía para dar el primer paso.</a></p></details>
+          <details class="reveal"><summary>¿"Software libre" y "open source" son lo mismo?</summary><p>Describen casi el mismo conjunto de programas, pero con énfasis distinto. "Software libre" (Free Software Foundation, 1985) pone el foco en las libertades de las personas usuarias; "open source" (término popularizado en 1998) destaca las ventajas prácticas de desarrollar el código de forma abierta.</p></details>
+        </div>
+      </section>
+
+      <!-- ============ CTA FINAL ============ -->
+      <section class="ix-cta reveal" aria-labelledby="ix-cta-t">
+        <div>
+          <h2 id="ix-cta-t">¿Listo para tu primer paso?</h2>
+          <p>Elige una herramienta, instálala y, cuando te sientas cómodo, aporta algo a la comunidad.</p>
+        </div>
+        <div class="ix-cta-btns">
+          <a href="pages/herramientas.html" class="btn-primary-os">Explorar herramientas</a>
+          <a href="pages/comunidad.html" class="ix-cta-ghost">Quiero contribuir</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/marquee.js"></script>
+  <script src="js/mascota.js"></script>
+  <script src="js/cristal.js"></script>
+  <script src="js/inicio.js"></script>
+
+</body>
+</html>

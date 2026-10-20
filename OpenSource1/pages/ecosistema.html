@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecosistema · Open Source</title>
+<meta name="description" content="¿Qué es Open Source? Historia del movimiento, licencias y las organizaciones que impulsan el ecosistema global.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-navbar" id="top">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand brand">
+        <span class="mark">&lt;/&gt;</span>
+        <span class="label">Open Source</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Ecosistema</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#que-es">¿Qué es?</a></li>
+              <li><a class="dropdown-item" href="#historia">Historia</a></li>
+              <li><a class="dropdown-item" href="#organizaciones">Organizaciones</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Herramientas</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item fw-semibold" href="herramientas.html">Todas las herramientas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="distros.html">Distros Linux</a></li>
+              <li><a class="dropdown-item" href="ofimatica.html">Ofimática</a></li>
+              <li><a class="dropdown-item" href="edicion.html">Edición</a></li>
+              <li><a class="dropdown-item" href="juegos.html">Juegos</a></li>
+              <li><a class="dropdown-item" href="utilidades.html">Utilidades</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desarrollo</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="desarrollo.html#lenguajes">Lenguajes</a></li>
+              <li><a class="dropdown-item" href="desarrollo.html#frameworks">Frameworks</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="comunidad.html#participar">Cómo participar</a></li>
+              <li><a class="dropdown-item" href="comunidad.html#alternativas">OS vs Comercial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="comunidad.html#galeria">Galería</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ CAROUSEL ============ -->
+  <div class="page-carousel" id="carousel-ecosistema" aria-label="Imágenes del ecosistema">
+    <div class="pc-track" id="pcTrack-eco">
+
+      <div class="pc-slide active" style="background-image:url('../img/carousel/gnu.jpg')">
+        <div class="pc-content">
+          <div class="pc-icon"><i class="devicon-linux-plain"></i></div>
+          <p class="pc-label">Proyecto GNU</p>
+          <p class="pc-sublabel">El movimiento que inició la revolución del software libre en 1983.</p>
+          <span class="pc-tag">Ecosistema</span>
+        </div>
+      </div>
+
+      <div class="pc-slide" style="background-image:url('../img/carousel/linux.jpg')">
+        <div class="pc-content">
+          <div class="pc-icon"><i class="devicon-linux-plain colored"></i></div>
+          <p class="pc-label">Linux Kernel</p>
+          <p class="pc-sublabel">El núcleo que impulsa servidores, smartphones y supercomputadoras en todo el mundo.</p>
+          <span class="pc-tag">Sistema Operativo</span>
+        </div>
+      </div>
+
+      <div class="pc-slide" style="background-image:url('../img/carousel/osi.jpg')">
+        <div class="pc-content">
+          <div class="pc-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="white" stroke-width="2"/><path d="M12 3v18M3 12h18" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <p class="pc-label">Open Source Initiative</p>
+          <p class="pc-sublabel">Fundada en 1998 para definir y promover el estándar open source en la industria.</p>
+          <span class="pc-tag">Organización</span>
+        </div>
+      </div>
+
+      <div class="pc-slide" style="background-image:url('../img/carousel/github.jpg')">
+        <div class="pc-content">
+          <div class="pc-icon"><i class="devicon-github-original"></i></div>
+          <p class="pc-label">GitHub</p>
+          <p class="pc-sublabel">Más de 100 millones de desarrolladores colaboran en proyectos abiertos cada día.</p>
+          <span class="pc-tag">Plataforma</span>
+        </div>
+      </div>
+
+      <div class="pc-slide" style="background-image:url('../img/carousel/apache.jpg')">
+        <div class="pc-content">
+          <div class="pc-icon"><i class="devicon-apache-plain colored"></i></div>
+          <p class="pc-label">Apache Foundation</p>
+          <p class="pc-sublabel">Más de 350 proyectos activos que sostienen gran parte del stack de internet global.</p>
+          <span class="pc-tag">Fundación</span>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="pc-btn pc-prev" aria-label="Anterior">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="pc-btn pc-next" aria-label="Siguiente">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="pc-dots" id="pcDots-eco"></div>
+  </div>
+
+
+  <main>
+    <div class="container">
+
+      <!-- ============ 1. QUÉ ES ============ -->
+      <section id="que-es">
+        <div class="section-head reveal">
+          <div class="icon-badge">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" stroke="white" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="white"/></svg>
+          </div>
+          <h2>¿Qué es Open Source?</h2>
+        </div>
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7 reveal">
+            <div class="text-block">
+              <p><strong>Open Source</strong> (código abierto) describe software cuyo código fuente se publica de forma abierta: cualquier persona puede leerlo, usarlo, modificarlo y redistribuirlo. No se trata solo de que el programa sea gratuito — lo central es la <strong>transparencia del código</strong> y la libertad para intervenir en él.</p>
+              <p>Este modelo se sostiene en licencias específicas (GPL, MIT, Apache) que definen legalmente qué se puede hacer con ese código, y en comunidades globales que colaboran de forma distribuida sin pertenecer a una misma empresa ni país.</p>
+              <p class="mb-0">Hoy el Open Source es la base de <strong>gran parte de la infraestructura tecnológica global</strong>: el servidor que aloja esta página, el navegador con el que la lees, el sistema operativo de tu teléfono — todo tiene raíces en proyectos abiertos. Y la mejor parte: cualquiera puede unirse.</p>
+            </div>
+          </div>
+          <div class="col-lg-5 reveal">
+            <figure class="section-figure" style="background-image:url('../img/que-es.jpg')">
+              <div class="gallery-placeholder">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 14.5l5-4.5 4 3.5 3-2.5 6 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7.5" r="1.4" fill="currentColor"/></svg>
+                <span>Imagen · img/que-es.jpg</span>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. HISTORIA ============ -->
+      <section id="historia">
+        <div class="section-head reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3M12 3a9 9 0 100 18 9 9 0 000-18z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h2>Historia</h2>
+        </div>
+        <div class="journey">
+          <div class="stop reveal">
+            <div class="node">1983</div>
+            <div class="stop-card"><h3>Proyecto GNU</h3><p>Richard Stallman inicia GNU con el objetivo de crear un sistema operativo completo compuesto enteramente por software libre.</p></div>
+          </div>
+          <div class="stop reveal">
+            <div class="node">1985</div>
+            <div class="stop-card"><h3>Free Software Foundation</h3><p>Stallman funda la FSF para dar soporte legal y organizativo al movimiento del software libre y publicar las licencias GPL.</p></div>
+          </div>
+          <div class="stop reveal">
+            <div class="node">1991</div>
+            <div class="stop-card"><h3>Nace Linux</h3><p>Linus Torvalds publica el kernel Linux. Combinado con las herramientas de GNU, da origen a un sistema operativo libre completo que hoy corre en servidores, teléfonos y supercomputadoras.</p></div>
+          </div>
+          <div class="stop reveal">
+            <div class="node">1998</div>
+            <div class="stop-card"><h3>Se acuña "Open Source"</h3><p>Tras la publicación del código de Netscape, se funda la Open Source Initiative (OSI) para facilitar la adopción comercial del modelo.</p></div>
+          </div>
+          <div class="stop reveal">
+            <div class="node">2005</div>
+            <div class="stop-card"><h3>Git</h3><p>Torvalds crea Git, el sistema de control de versiones distribuido que cambiaría para siempre la forma de colaborar en proyectos de código.</p></div>
+          </div>
+          <div class="stop reveal">
+            <div class="node">2008</div>
+            <div class="stop-card"><h3>GitHub</h3><p>El lanzamiento de GitHub simplifica alojar, compartir y contribuir a proyectos, acelerando la colaboración masiva a escala global.</p></div>
+          </div>
+          <div class="stop reveal">
+            <div class="node">Hoy</div>
+            <div class="stop-card"><h3>Un ecosistema consolidado</h3><p>Linux, Python, Kubernetes, VS Code, Android y miles de proyectos más sostienen la industria del software mundial — todos abiertos, todos accesibles.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3. ORGANIZACIONES ============ -->
+      <section id="organizaciones">
+        <div class="section-head reveal">
+          <div class="icon-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h2>Organizaciones Líderes en Open Source</h2>
+        </div>
+        <p class="section-intro reveal">Detrás de los proyectos más importantes hay organizaciones que los sostienen, financian y garantizan su continuidad.</p>
+
+        <div class="row g-3 reveal">
+          <div class="col-12">
+            <div class="org-card">
+              <div class="org-card-figure"><span class="org-icon">🐧</span></div>
+              <div class="org-card-body">
+                <div class="org-card-head"><h4>Linux Foundation</h4></div>
+                <p>La organización más influyente del ecosistema. Gestiona el kernel Linux, Kubernetes, Node.js y más de 900 proyectos críticos.</p>
+                <div class="org-projects"><span>Linux</span><span>Kubernetes</span><span>Node.js</span><span>CNCF</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="org-card">
+              <div class="org-card-figure"><span class="org-icon">🪶</span></div>
+              <div class="org-card-body">
+                <div class="org-card-head"><h4>Apache Software Foundation</h4></div>
+                <p>Más de 350 proyectos activos. Responsable de Apache HTTP Server, Kafka, Spark, Maven y buena parte del stack de Big Data.</p>
+                <div class="org-projects"><span>Apache HTTP</span><span>Kafka</span><span>Spark</span><span>Maven</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="org-card">
+              <div class="org-card-figure"><span class="org-icon">🦊</span></div>
+              <div class="org-card-body">
+                <div class="org-card-head"><h4>Mozilla Foundation</h4></div>
+                <p>Guardianes de la web abierta. Creadores de Firefox, Thunderbird y el lenguaje Rust. Su misión: internet accesible para todos.</p>
+                <div class="org-projects"><span>Firefox</span><span>Thunderbird</span><span>Rust</span><span>MDN</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="org-card">
+              <div class="org-card-figure"><span class="org-icon">🐍</span></div>
+              <div class="org-card-body">
+                <div class="org-card-head"><h4>Python Software Foundation</h4></div>
+                <p>Mantiene el lenguaje de programación más popular del mundo, CPython y el repositorio PyPI con más de 500,000 paquetes.</p>
+                <div class="org-projects"><span>CPython</span><span>PyPI</span><span>PEPs</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="org-card">
+              <div class="org-card-figure"><span class="org-icon">🔴</span></div>
+              <div class="org-card-body">
+                <div class="org-card-head"><h4>Red Hat / IBM</h4></div>
+                <p>El mayor contribuidor comercial al kernel Linux. Patrocinador de Fedora, Ansible y OpenShift. Prueba de que el open source es negocio.</p>
+                <div class="org-projects"><span>RHEL</span><span>Fedora</span><span>Ansible</span><span>OpenShift</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="org-card">
+              <div class="org-card-figure"><span class="org-icon">🪟</span></div>
+              <div class="org-card-body">
+                <div class="org-card-head"><h4>Microsoft Open Source</h4></div>
+                <p>Hoy uno de los mayores contribuidores de GitHub. Responsable de VS Code, TypeScript, .NET Core y la adquisición de GitHub en 2018.</p>
+                <div class="org-projects"><span>VS Code</span><span>TypeScript</span><span>.NET Core</span><span>GitHub</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="../index.html" class="navbar-brand brand">
+          <span class="mark">&lt;/&gt;</span>
+          <span class="label">Open Source</span>
+        </a>
+      </div>
+      <div class="footer-meta">
+        <div class="meta-chip"><div class="label">Materia</div><div class="value">Herramientas de Open Source</div></div>
+        <div class="meta-chip"><div class="label">Carrera</div><div class="value placeholder">Ingeniería en Teleinformática</div></div>
+        <div class="meta-chip"><div class="label">Universidad</div><div class="value placeholder">[Nombre de la universidad]</div></div>
+        <div class="meta-chip"><div class="label">Alumno</div><div class="value placeholder">[Tu nombre]</div></div>
+        <div class="meta-chip"><div class="label">Profesor</div><div class="value placeholder">[Nombre del profesor]</div></div>
+        <div class="meta-chip"><div class="label">Fecha</div><div class="value placeholder">[Fecha de entrega]</div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Open Source · Proyecto académico</span>
+        <span class="footer-tag">Hecho con <i class="devicon-git-plain colored"></i> y software libre</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/carousel.js"></script>
+  <script>initCarousel('pcTrack-eco', 'pcDots-eco', 4500);</script>
+
+</body>
+</html>
